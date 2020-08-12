@@ -1,3 +1,2 @@
- - Treść publikacji powinna być umieszczona w tagu ```<main class="content">Zawartość publikacji</main>```
- - Podziały stron publikacji powinny być zrobione tagiem ```<span class="nextPage">```
- 
+# szablon-WCAG
+Szablon dla adaptacji publikacji zgodnie z WCAG 2.1 poziom AA.
