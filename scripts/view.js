@@ -17,7 +17,7 @@ var view = function () {
     };
 
     function createCopyButtons() {
-        $('code').each(function (index, element) {
+        $('pre').each(function (index, element) {
             const codeSnippetId = `snippet-${codeSnippetsCounter}`;
             element.setAttribute('id', codeSnippetId);
             codeSnippetsCounter++;
