@@ -246,7 +246,7 @@
                     </figure>
 
                     <h3>Numery stron</h3>
-                    Strony oddzielamy za pomocą separatora. <figure id="code3">
+                    Podział na strony stosujemy podczas adaptacji publikacji/dokumentu, jeśli wymaga zachowania oryginalnej numeracji stron. Strony oddzielamy za pomocą separatora. <figure id="code3">
                         <figcaption class="tfl-center">Kod dla numeracji stron</figcaption>
                         <pre><code class="lang-html">&lt;span class="nextPage"&gt;&lt;/span&gt;</code></pre>
                     </figure>
@@ -395,8 +395,21 @@
                             </ol>
 
                             <h3>Dzielenie list, tabel między stronami</h3>
-<p>Jeśli na jednej stronie znajduje się jeden - dwa punkty listy, a na kolejnej następne elementy należy przenieść listę na jedną stronę</p>
+<p>Jeśli na jednej stronie znajduje się jeden element listy, a na kolejnej następne elementy należy przenieść listę na jedną stronę.</p>
+<figure id="code11a"><figacption class="tfl-center">Przykład kodu HTML dla dzielenia listy między stronami.</figacption><pre><code class="lang-html">&lt;ul&gt;
+    &lt;li&gt;Pierwszy element listy&lt;/li&gt;
+    &lt;li&gt;Drugi element listy
+    &lt;span class=”nextPage”&gt;&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Trzeci element listy&lt;/li&gt;
+&lt;/ul&gt;</code></pre></figure>
 
+<p>Jeśli tabela znajduje się na wielu stronach należy przed miejscem lokalizacji tabeli wstawić tyle znaczników podziału strony span z klasą nextPage na ilu stronach znajduje się duża tabela i po znacznikach dopisać słownie informację: Tabela nr XX znajduje się na 3 stronach publikacji: 121, 122, 123.</p>
+<figure id="code11b"><figacption class="tfl-center">Przykład kodu HTML dla dzielenia tabeli między stronami.</figacption><pre><code class="lang-html">&lt;span class=”nextPage”&gt;&lt;/span&gt;
+&lt;span class=”nextPage”&gt;&lt;/span&gt;
+&lt;span class=”nextPage”&gt;&lt;/span&gt;
+&lt;p&gt;Tabela nr XX znajduje się na 3 stronach publikacji: 121, 122, 123.&lt;/p&gt;
+&lt;table&gt;&lt;/table&gt;</code></pre></figure>
 <h3>Spis treści</h3>
 <p>Spis treści tworzony jest skryptem .js z nagłówków - należy zachować odpowiednią hierarchię nagłówków, aby został stworzony.</p>
 <h3>Przypisy</h3>
