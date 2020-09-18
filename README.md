@@ -41,28 +41,28 @@ Tabele możemy utworzyć za pomocą generatora tabel [Przejdź do generatora tab
 
 ```html
 <div class="table-responsive-md">
-<table id="tab1" class="table table-bordered table-striped"> 
-	<caption>Tytuł tabeli</caption>
-		<thead>
-			<tr>
-				<th>Wiersz nagłówkowy</th>
-				<th>Wiersz nagłówkowy</th>
-				<th>Wiersz nagłówkowy</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Dane</td>
-				<td>Dane</td>
-				<td>Dane</td>
-			</tr>
-			<tr>
-				<td>Dane 1</td>
-				<td>Dane 1</td>
-				<td>Dane 1</td>
-			</tr>
-		</tbody>
-</table>
+    <table id="tab1" class="table table-bordered table-striped"> 
+        <caption>Tytuł tabeli</caption>
+            <thead>
+                <tr>
+                    <th>Wiersz nagłówkowy</th>
+                    <th>Wiersz nagłówkowy</th>
+                    <th>Wiersz nagłówkowy</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dane</td>
+                    <td>Dane</td>
+                    <td>Dane</td>
+                </tr>
+                <tr>
+                    <td>Dane 1</td>
+                    <td>Dane 1</td>
+                    <td>Dane 1</td>
+                </tr>
+            </tbody>
+    </table>
 </div>
 <details id="table">
   <summary>Szczegółowy opis tabeli</summary>
