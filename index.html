@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="author" content="Magdalena Kruczek" />
     <title>Specyfikacja adaptacji HTML</title>
 
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
@@ -12,7 +13,8 @@
     <link rel="stylesheet" href="styles.css">
 
     <script src="./lib/jquery-3.4.1.js"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
 
     <script src="./lib/highlight.min.js"></script>
     <script src="./lib/clipboard.min.js"></script>
@@ -23,17 +25,12 @@
     <div class="container-fluid">
         <header>
             <div class="row">
-
                 <div class="col-md-3">
                     <img src="./images/img1.jpg" class="img-fluid" alt="Logo laboratorium tyfloinformatycznego">
                 </div>
-
             </div>
-
             <div class="row justify-content-center">
-
                 <h1 id="typora">Specyfikacja adaptacji HTML</h1>
-
             </div>
         </header>
         <div class="row">
@@ -43,7 +40,6 @@
                     <div class="tfl-side-navbar">
                         <nav class="navbar flex-column" id="tableOfContent">
                             <a class="navbar-brand" role="heading" aria-level="2">Spis treści</a>
-
                         </nav>
                     </div>
                 </div>
@@ -104,7 +100,6 @@
                 </nav>
             </div>
             <div class="col-md-9">
-
                 <main>
                     <h2>Informacje ogólne</h2>
                     <p>Niniejsza specyfikacja dotyczy adaptacji publikacji, dokumentów tekstowych do dostępnego formatu
@@ -151,7 +146,8 @@
                         skomplikowana tabela należy rozwinąć jej opis za pomocą znacznika details.</p>
                     <figure id="code1">
                         <figcaption class="tfl-center">Przykład kodu dla tabeli</figcaption>
-                        <pre><code class="lang-html">&lt;table id="tab1" class="table table-bordered table-striped"&gt; 
+                        <pre><code class="lang-html">&lt;div class="table-responsive-md"&gt; 
+&lt;table id="tab1" class="table table-bordered table-striped"&gt; 
 	&lt;caption&gt;Tytuł tabeli&lt;/caption&gt;
 		&lt;thead&gt;
 			&lt;tr&gt;
@@ -173,6 +169,7 @@
 			&lt;/tr&gt;
 		&lt;/tbody&gt;
 &lt;/table&gt;
+&lt;/div&gt;
 &lt;details id="table"&gt;
   &lt;summary&gt;Szczegółowy opis tabeli&lt;/summary&gt;
   &lt;p&gt;Tutaj umieszczamy szczegółowy opis tabeli&lt;/p&gt;
@@ -491,7 +488,6 @@
 <h3>Uwagi do wersji zaadaptowanej</h3>
 <p>Wszystkie zmiany odbiegające od oryginału powinny zostać krótko opisane w uwagach do adaptacji na początku dokumentu.</p>
 <p>Przed adaptacją treści należy uzupełnić dane początkowe tj. „Uwagi do wersji zaadaptowanej:” występujące na początku szablonu. W razie potrzeby należy dopisywać w miejsce uwag znaczące różnice, które występują między oryginałem a adaptacją.</p>
-
                 </main>
                 <footer>
                     <p>Publikacja została zaadaptowana zgodnie z WCAG 2.1 na poziomie AA. Obecnie wersja v1.1. Szablon
