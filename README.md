@@ -40,6 +40,7 @@ Tytuł dokumentu (Nagłówek 1)
 Tabele możemy utworzyć za pomocą generatora tabel [Przejdź do generatora tabel](https://www.tablesgenerator.com/html_tables). Tabele powinny posiadać wiersz nagłówkowy, tytuł, unikalny identyfikator id oraz jeśli jest to skomplikowana tabela należy rozwinąć jej opis za pomocą znacznika `details`.
 
 ```html
+<div class="table-responsive-md">
 <table id="tab1" class="table table-bordered table-striped"> 
 	<caption>Tytuł tabeli</caption>
 		<thead>
@@ -62,6 +63,7 @@ Tabele możemy utworzyć za pomocą generatora tabel [Przejdź do generatora tab
 			</tr>
 		</tbody>
 </table>
+</div>
 <details id="table">
   <summary>Szczegółowy opis tabeli</summary>
   <p>Tutaj umieszczamy szczegółowy opis tabeli</p>
@@ -148,8 +150,6 @@ function detectStructure() {
 };
 ```
 
-
-
 ## Oznaczenie języka
 
 Język fragmentu tekstu należy oznaczyć poprzez umieszczenie wybranego fragmentu w znaczniku `span` oraz wybranie skrótu odpowiedniego języka np. en, pl, fr.
@@ -186,8 +186,6 @@ Listę uporządkowaną tworzymy za pomocą znacznika `ol`, nieuporządkowane za 
 </ol>
 ```
 
-
-
 ## Dzielenie list, tabel między stronami
 
 Jeśli na jednej stronie znajduje się jeden element listy, a na kolejnej  następne elementy należy przenieść listę na jedną stronę.
@@ -211,8 +209,6 @@ Jeśli tabela znajduje się na wielu stronach należy przed miejscem  lokalizacj
 <p>Tabela nr XX znajduje się na 3 stronach publikacji: 121, 122, 123.</p>
 <table></table>
 ```
-
-
 
 ## Spis treści
 
@@ -302,8 +298,6 @@ Przykład listy skrótów:
         <li><abbr title="minuta">min</abbr></li>
     </ol>
 ```
-
-
 
 ## Wyróżnienia w tekście
 
