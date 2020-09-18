@@ -1,128 +1,137 @@
 .page-number {
-  float: right;  
-  font-size: 0.8em;
+    float: right;
+    font-size: 0.8em;
 }
 
 :focus {
-  outline: dotted thin;
+    outline: dotted thin;
 }
 
 h1 {
-  padding-left: 2em;
-  padding-right: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 blockquote {
-  font-style: italic;
-  text-indent: 1.5em;
+    font-style: italic;
+    text-indent: 1.5em;
 }
 
 q {
-  font-style: italic;
+    font-style: italic;
 }
 
 #goTo {
-  display: none;
+    display: none;
 }
+
 nav.row {
-  justify-content: center;
+    justify-content: center;
 }
-.page-number { 
-  position: relative; 
-  width: 100%;
-  text-align: right; 
+
+.page-number {
+    position: relative;
+    width: 100%;
+    text-align: right;
 }
 
 a {
-  color: #0056b3;
+    color: #0056b3;
+    word-wrap: break-word;
 }
 
-.tfl-side-container{
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+.tfl-side-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 .tfl-side-navbar {
-  height: 95vh;
-  overflow-y: auto;
+    height: 95vh;
+    overflow-y: auto;
 }
-.tfl-page-navbar{
-  height: 5vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: nowrap;
+
+.tfl-page-navbar {
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
 }
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #343a40;
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #343a40;
 }
+
 a.nav-link {
-  color: #343a40;
-  text-decoration: none;
-  background-color: transparent;
+    color: #343a40;
+    text-decoration: none;
+    background-color: transparent;
 }
+
 #pageInput {
-  width: 5em;
-  text-align: center;
+    width: 5em;
+    text-align: center;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
+input[type=number] {
+    -moz-appearance: textfield;
+}
 
- input[type=number] {
-  -moz-appearance: textfield;
-} 
 .tfl-center {
-  text-align: center;
+    text-align: center;
 }
 
-  ol.none {
+ol.none {
     list-style-type: none;
-  }
+}
 
-  footer {
+footer {
     padding-top: 3em;
-  }  
-    footer ol {
-    padding-left: 20px;
-   }
-  
-    article {
-    counter-reset: footnotes;
-   }
-  
-    .footnote {
-    vertical-align: super; 
-    font-size: 0.8em; 
-    margin-left: 2px; 
-    color: blue; 
-    text-decoration: underline; 
-    cursor: pointer; 
-   }
-  
-   .footnote-harvard {
-    color: blue; 
-    text-decoration: underline; 
-    cursor: pointer; 
-  }
+}
 
-   [aria-describedby="footnote-label"]:focus::after {
+footer ol {
+    padding-left: 20px;
+}
+
+article {
+    counter-reset: footnotes;
+}
+
+.footnote {
+    vertical-align: super;
+    font-size: 0.8em;
+    margin-left: 2px;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footnote-harvard {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+[aria-describedby="footnote-label"]:focus::after {
     outline: thin dotted;
     outline-offset: 2px;
-   }
-   
-   [aria-label="Back to content"] {
+}
+
+[aria-label="Back to content"] {
     font-size: 0.8em;
-   }
-  
-   .tfl-footer :target {
+}
+
+.tfl-footer :target {
     background: rgb(93, 180, 238);
-   }
+}
