@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="author" content="Magdalena Kruczek" />
+    <meta name="author" content="Magdalena Kruczek" />
     <title>Specyfikacja adaptacji HTML</title>
 
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles.css">
 
     <script src="./lib/jquery-3.4.1.js"></script>
-	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
 
     <script src="./lib/highlight.min.js"></script>
@@ -47,9 +47,7 @@
                     <div class="tfl-page-navbar">
                         <form id="goToPageForm" action="#" onsubmit="ctrl.navigateToPage()" class="form-inline">
                             <div class="form-row">
-                                <button id="prevChaptBtn" type="button" aria-label="Poprzedni rozdział"
-                                    class="btn btn-dark btn-sm" data-toggle="tooltip" data-placement="top"
-                                    title="Poprzedni rozdział" onclick="ctrl.navigateToPrevChapter()">
+                                <button id="prevChaptBtn" type="button" aria-label="Poprzedni rozdział" class="btn btn-dark btn-sm" data-toggle="tooltip" data-placement="top" title="Poprzedni rozdział" onclick="ctrl.navigateToPrevChapter()">
                                     <svg class="bi bi-chevron-bar-left" width="1em" height="1em" viewBox="0 0 16 16"
                                         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd"
@@ -57,9 +55,7 @@
                                             clip-rule="evenodd" />
                                     </svg>
                                 </button>
-                                <button id="prevPageBtn" type="button" aria-label="Poprzednia strona"
-                                    class="btn btn-dark btn-sm" data-toggle="tooltip" data-placement="top"
-                                    title="Poprzednia strona" onclick="ctrl.navigateToPrevPage()">
+                                <button id="prevPageBtn" type="button" aria-label="Poprzednia strona" class="btn btn-dark btn-sm" data-toggle="tooltip" data-placement="top" title="Poprzednia strona" onclick="ctrl.navigateToPrevPage()">
                                     <svg class="bi bi-chevron-left" width="1em" height="1em" viewBox="0 0 16 16"
                                         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd"
@@ -70,12 +66,9 @@
                                 <div>
                                     <label for="pageInput" class="sr-only">Wprowadź numer strony. Zatwierdź klawiszem
                                         enter</label>
-                                    <input type="number" class="form-control form-control-sm" id="pageInput"
-                                        name="pageInput">
+                                    <input type="number" class="form-control form-control-sm" id="pageInput" name="pageInput">
                                 </div>
-                                <button id="nextPageBtn" type="button" aria-label="Następna strona"
-                                    class="btn btn-dark btn-sm" data-toggle="tooltip" data-placement="top"
-                                    title="Następna strona" onclick="ctrl.navigateToNextPage()">
+                                <button id="nextPageBtn" type="button" aria-label="Następna strona" class="btn btn-dark btn-sm" data-toggle="tooltip" data-placement="top" title="Następna strona" onclick="ctrl.navigateToNextPage()">
                                     <svg class="bi bi-chevron-right" width="1em" height="1em" viewBox="0 0 16 16"
                                         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd"
@@ -83,9 +76,7 @@
                                             clip-rule="evenodd" />
                                     </svg>
                                 </button>
-                                <button id="nextChaptBtn" type="button" aria-label="Następny rozdział"
-                                    class="btn btn-dark btn-sm" data-toggle="tooltip" data-placement="top"
-                                    title="Następny rozdział" onclick="ctrl.navigateToNextChapter()">
+                                <button id="nextChaptBtn" type="button" aria-label="Następny rozdział" class="btn btn-dark btn-sm" data-toggle="tooltip" data-placement="top" title="Następny rozdział" onclick="ctrl.navigateToNextChapter()">
                                     <svg class="bi bi-chevron-bar-right" width="1em" height="1em" viewBox="0 0 16 16"
                                         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd"
@@ -102,24 +93,23 @@
             <div class="col-md-9">
                 <main>
                     <h2>Informacje ogólne</h2>
-                    <p>Niniejsza specyfikacja dotyczy adaptacji publikacji, dokumentów tekstowych do dostępnego formatu
-                        HTML zgodnie z WCAG 2.1. na poziomie AA na szablonie przygotowanym w Laboratorium Tyfloinformatycznym Politechniki Wrocławskiej. Tworząc na szablonie, zgodnie z wytycznymy nowy dokument otrzymamy wersję dostępną cyfrowo dla każdego.</p>
+                    <p>Niniejsza specyfikacja dotyczy adaptacji publikacji, dokumentów tekstowych do dostępnego formatu HTML zgodnie z WCAG 2.1. na poziomie AA na szablonie przygotowanym w Laboratorium Tyfloinformatycznym Politechniki Wrocławskiej. Tworząc
+                        na szablonie, zgodnie z wytycznymy nowy dokument otrzymamy wersję dostępną cyfrowo dla każdego.</p>
                     <h3>Metadane</h3>
                     <p>W elemencie head dokumentu HTML należy uzupełnić informacje na jego temat.</p>
-                    <figure id="code0"><figcaption>Przykład kodu w z metadanymi w elemencie head</figcaption><pre><code class="lang-html">&lt;meta name="author" content="Magdalena Kruczek"/&gt;
+                    <figure id="code0">
+                        <figcaption>Przykład kodu w z metadanymi w elemencie head</figcaption><pre><code class="lang-html">&lt;meta name="author" content="Magdalena Kruczek"/&gt;
 &lt;title&gt;Specyfikacja adaptacji HTML&lt;/title&gt;</code></pre></figure>
 
                     <p>W sekcji header dokumentu HTML należy uzupełnić tytuł oznaczony nagłówkiem pierwszego stopnia.
                     </p>
-<figure id="code1"><figcaption>Przykład kodu w elemencie header dokumentu</figcaption><pre><code class="lang-html">&lt;header&gt;
+                    <figure id="code1">
+                        <figcaption>Przykład kodu w elemencie header dokumentu</figcaption><pre><code class="lang-html">&lt;header&gt;
 &lt;h1&gt;Specyfikacja adaptacji HTML&lt;/h1&gt;
 &lt;/header&gt;</code></pre></figure>
                     <h3>Nagłówki</h3>
-                    <p>Ważne jest oznaczanie nagłówków w dokumencie - przez nie zostanie stworzony spis treści za pomocą
-                        skryptu .js. Nagłówek poziomu pierwszego zwyczajowo przypisywany jest do tytułu publikacji,
-                        rozdziały rozpoczynamy numerować od nagłówka poziomu drugiego. Należy zachować hierarchię
-                        nagłówków. Nie należy używać nagłówka poziomu trzeciego jeśli wcześniej w dokumencie nie został
-                        użyty nagłówek poziomu drugiego.</p>
+                    <p>Ważne jest oznaczanie nagłówków w dokumencie - przez nie zostanie stworzony spis treści za pomocą skryptu .js. Nagłówek poziomu pierwszego zwyczajowo przypisywany jest do tytułu publikacji, rozdziały rozpoczynamy numerować od nagłówka
+                        poziomu drugiego. Należy zachować hierarchię nagłówków. Nie należy używać nagłówka poziomu trzeciego jeśli wcześniej w dokumencie nie został użyty nagłówek poziomu drugiego.</p>
                     <p>Przykład poprawnie użytej struktury nagłówków:</p>
                     <ol class="none">
                         <li>Tytuł dokumentu (Nagłówek 1)
@@ -140,9 +130,7 @@
                     </ol>
 
                     <h3>Tabele</h3>
-                    <p>Tabele możemy utworzyć za pomocą generatora tabel <a
-                            href="https://www.tablesgenerator.com/html_tables">Przejdź do generatora tabel</a>. Tabele
-                        powinny posiadać wiersz nagłówkowy, tytuł, unikalny identyfikator id oraz jeśli jest to
+                    <p>Tabele możemy utworzyć za pomocą generatora tabel <a href="https://www.tablesgenerator.com/html_tables">Przejdź do generatora tabel</a>. Tabele powinny posiadać wiersz nagłówkowy, tytuł, unikalny identyfikator id oraz jeśli jest to
                         skomplikowana tabela należy rozwinąć jej opis za pomocą znacznika details.</p>
                     <figure id="code1">
                         <figcaption class="tfl-center">Przykład kodu dla tabeli</figcaption>
@@ -207,10 +195,8 @@
                     </details>
 
                     <h3>Grafiki</h3>
-                    <p>Każda grafika przedstawiająca informacje powinna posiadać opis alternatywny oraz tytuł. Jeśli
-                        jest skomplikowana i przedstawia dużo treści oprócz krótkiego opisu alternatywnego należy
-                        rozwinąć opis za pomocą znacznika details. Każda grafika powinna posiadać unikalny identyfikator
-                        id. Opisu alternatywnego nie wymagają jedynie grafiki dekoracyjne.</p>
+                    <p>Każda grafika przedstawiająca informacje powinna posiadać opis alternatywny oraz tytuł. Jeśli jest skomplikowana i przedstawia dużo treści oprócz krótkiego opisu alternatywnego należy rozwinąć opis za pomocą znacznika details. Każda
+                        grafika powinna posiadać unikalny identyfikator id. Opisu alternatywnego nie wymagają jedynie grafiki dekoracyjne.</p>
                     <figure id="code2">
                         <figcaption class="tfl-center">Przykład kodu dla grafiki</figcaption>
                         <pre><code class="lang-html">&lt;figure id="img1" class="tfl-center"&gt;
@@ -229,8 +215,7 @@
   </code></pre>
                     </figure>
                     <figure id="img1" class="tfl-center">
-                        <img src="images/img1.jpg" class="img-fluid"
-                            alt="Tutaj umieszczamy opis alternatywny do grafiki" />
+                        <img src="images/img1.jpg" class="img-fluid" alt="Tutaj umieszczamy opis alternatywny do grafiki" />
                         <figcaption>
                             Tutaj umieszczamy wyświetlany tytuł grafiki.
                             <details>
@@ -243,14 +228,13 @@
                     </figure>
 
                     <h3>Numery stron</h3>
-                    Podział na strony stosujemy podczas adaptacji publikacji/dokumentu, jeśli wymaga zachowania oryginalnej numeracji stron. Strony oddzielamy za pomocą separatora. <figure id="code3">
+                    Podział na strony stosujemy podczas adaptacji publikacji/dokumentu, jeśli wymaga zachowania oryginalnej numeracji stron. Strony oddzielamy za pomocą separatora.
+                    <figure id="code3">
                         <figcaption class="tfl-center">Kod dla numeracji stron</figcaption>
                         <pre><code class="lang-html">&lt;span class="nextPage"&gt;&lt;/span&gt;</code></pre>
                     </figure>
-                    <p>Nie dodajemy ręcznie numerów stron - za pomocą skryptu .js zostaną one umieszczone automatycznie.
-                        Pierwsza numerowana strona w publikacji to pierwszy znacznik separatora na górze strony. Gdy w
-                        publikacji występują puste strony w adaptacji należy taką informację zawrzeć używając zdania:
-                        Pusta strona po numerze strony - znaczniku span z klasą nextPage.</p>
+                    <p>Nie dodajemy ręcznie numerów stron - za pomocą skryptu .js zostaną one umieszczone automatycznie. Pierwsza numerowana strona w publikacji to pierwszy znacznik separatora na górze strony. Gdy w publikacji występują puste strony w adaptacji
+                        należy taką informację zawrzeć używając zdania: Pusta strona po numerze strony - znaczniku span z klasą nextPage.</p>
 
                     <h3>Hiperłącza</h3>
 
@@ -262,31 +246,29 @@
                     </figure>
 
                     <h3>Wzory matematyczne</h3>
-                    <p>Wzory matematyczne opisujemy za pomocą LaTeX zamykając je w podwójnych dolarach dla wzoru w nowej
-                        linii,
-                    <pre>$$ $$</pre> dla wzoru w tej samej linii zamknięcie w znacznikach
-                    <pre>\( \)</pre> $$ \partial K(x)=\left\{\gamma \in \mathcal{R}^{n}: K(y) \geqslant
-                    K(x)+\gamma^{T}(y-x), \forall y \in \mathcal{R}^{n}\right\}, x \in \mathcal{X}$$</p>
+                    <p>Wzory matematyczne opisujemy za pomocą LaTeX zamykając je w podwójnych dolarach dla wzoru w nowej linii,
+                        <pre>$$ $$</pre> dla wzoru w tej samej linii zamknięcie w znacznikach
+                        <pre>\( \)</pre> $$ \partial K(x)=\left\{\gamma \in \mathcal{R}^{n}: K(y) \geqslant K(x)+\gamma^{T}(y-x), \forall y \in \mathcal{R}^{n}\right\}, x \in \mathcal{X}$$</p>
                     <figure id="code5">
                         <figcaption class="tfl-center">Kod LaTeX dla wzoru w nowej linii</figcaption>
                         <pre><code class="lang-tex">$$ \partial K(x)=\left\{\gamma \in \mathcal{R}^{n}: K(y) \geqslant K(x)+\gamma^{T}(y-x), \forall y \in \mathcal{R}^{n}\right\}, x \in \mathcal{X}$$.</code></pre>
                     </figure>
-                    <p>Przykład wzoru w zdaniu \(M_{j}=\left\{: y_{i}-a_{i j} < 0\right\}\)</p>
+                    <p>Przykład wzoru w zdaniu \(M_{j}=\left\{: y_{i}-a_{i j}
+                        < 0\right\}\)</p>
                             <figure id="code6">
                                 <figcaption class="tfl-center">Kod LaTeX dla wzoru umieszczonego w ciągu zdania
                                 </figcaption>
                                 <pre><code class="lang-tex">Przykład wzoru w zdaniu \(M_{j}=\left\{: y_{i}-a_{i j} < 0\right\}\)</code></pre>
                             </figure>
-                            <p>Nie zostawiamy tekstów w indeksie górnym np. liczebniki porządkowe angielskie
-                                6<sup>th</sup> zapisujemy jako 6th.</p>
+                            <p>Nie zostawiamy tekstów w indeksie górnym np. liczebniki porządkowe angielskie 6
+                                <sup>th</sup> zapisujemy jako 6th.</p>
 
                             <h3>Kod źródłowy</h3>
-                            <p>Zapisując kod źródłowy należy użyć znaczników pre oraz code z odpowiednią klasą
-                                biblioteki highlight.js <a
-                                    href="https://github.com/highlightjs/highlight.js/blob/master/SUPPORTED_LANGUAGES.md">Zobacz
+                            <p>Zapisując kod źródłowy należy użyć znaczników pre oraz code z odpowiednią klasą biblioteki highlight.js <a href="https://github.com/highlightjs/highlight.js/blob/master/SUPPORTED_LANGUAGES.md">Zobacz
                                     wykaz wspieranych języków i klas.</a></p>
-                                    <p>Zapisując kod źródłowy z języku HTML należy zamienić znak < oraz > na & lt; oraz & gt;. Można posłużyć się do tego automatycznym narzędziem, np. <a href="https://www.opinionatedgeek.com/codecs/htmlencoder">HTML Encoder</a>.</p>
-                                    
+                            <p>Zapisując kod źródłowy z języku HTML należy zamienić znak
+                                < oraz> na & lt; oraz & gt;. Można posłużyć się do tego automatycznym narzędziem, np. <a href="https://www.opinionatedgeek.com/codecs/htmlencoder">HTML Encoder</a>.</p>
+
                             <figure id="code7">
                                 <figcaption class="tfl-center">Przykład kodu w języku javascript</figcaption>
                                 <pre>
@@ -338,8 +320,7 @@
 &lt;/figure&gt;</code></pre>
                             </figure>
                             <h3>Oznaczenie języka</h3>
-                            <p>Język fragmentu tekstu należy oznaczyć poprzez umieszczenie wybranego fragmentu w
-                                znaczniku span oraz wybranie skrótu odpowiedniego języka np. en, pl, fr.</p>
+                            <p>Język fragmentu tekstu należy oznaczyć poprzez umieszczenie wybranego fragmentu w znaczniku span oraz wybranie skrótu odpowiedniego języka np. en, pl, fr.</p>
                             <figure id="code9">
                                 <figcaption>Przykład oznaczenia fragmentu tekstu w języku innym niż język dokumentu
                                 </figcaption>
@@ -347,27 +328,19 @@
 </code></pre>
                             </figure>
                             <ul>
-                                <li>Imiona i nazwiska w obcych językach oznaczamy jako język polski, a także nazwy
-                                    własne (nazwy uczelni, nazwy miast, rzek).</li>
-                                <li>Odpowiednim językiem oznaczamy tytuły publikacji, występujące np. w bibliografii, w
-                                    przypisach.</li>
+                                <li>Imiona i nazwiska w obcych językach oznaczamy jako język polski, a także nazwy własne (nazwy uczelni, nazwy miast, rzek).</li>
+                                <li>Odpowiednim językiem oznaczamy tytuły publikacji, występujące np. w bibliografii, w przypisach.
+                                </li>
                                 <li>Słowa takie jak „Facebook”, „Google”, „mail” itp. zostawiamy jako język polski.</li>
-                                <li>Słowa greckie, które są zapisane alfabetem łacińskim zostawiamy jako język polski,
-                                    zaś te napisane alfabetem greckim oznaczamy jako język grecki. Podobnie z językiem
-                                    rosyjskim, arabskim itp.</li>
+                                <li>Słowa greckie, które są zapisane alfabetem łacińskim zostawiamy jako język polski, zaś te napisane alfabetem greckim oznaczamy jako język grecki. Podobnie z językiem rosyjskim, arabskim itp.</li>
                             </ul>
                             <h3>Cytaty</h3>
-                            <p>Cytaty w tej samej linii oznaczamy tagiem q, cytat długi w nowym wierszu za pomocą
-                                blockquote.</p>
-                            <p>Jeżeli cytat zaczyna się na jednej stronie, a kończy na drugiej, przenosimy jego całość
-                                na stronę na której się zaczyna (o ile jego zakończenie nie zajmuje więcej niż około 25%
-                                strony). Jeżeli zajmuje więcej należy zakończyć zdanie z cytatu zaczynające się na
-                                poprzedniej stronie, wpisujemy znacznik podziału strony (span z klasą nextPage) i
-                                kończymy cytat.</p>
+                            <p>Cytaty w tej samej linii oznaczamy tagiem q, cytat długi w nowym wierszu za pomocą blockquote.
+                            </p>
+                            <p>Jeżeli cytat zaczyna się na jednej stronie, a kończy na drugiej, przenosimy jego całość na stronę na której się zaczyna (o ile jego zakończenie nie zajmuje więcej niż około 25% strony). Jeżeli zajmuje więcej należy zakończyć
+                                zdanie z cytatu zaczynające się na poprzedniej stronie, wpisujemy znacznik podziału strony (span z klasą nextPage) i kończymy cytat.</p>
                             <h3>Lista, lista zagnieżdżona</h3>
-                            <p>Listę uporządkowaną tworzymy za pomocą znacznika ol, nieuporządkowane za pomocą znacznika
-                                ul. Listy HTML można dowolnie zagnieżdżać, rozpoczynać od wybranego numeru lub nadać jej
-                                klasę none i samemu dowolnie numerować. </p>
+                            <p>Listę uporządkowaną tworzymy za pomocą znacznika ol, nieuporządkowane za pomocą znacznika ul. Listy HTML można dowolnie zagnieżdżać, rozpoczynać od wybranego numeru lub nadać jej klasę none i samemu dowolnie numerować. </p>
                             <figure id="code10">
                                 <figcaption>Przykład numerowanej listy zagnieżdżonej</figcaption><pre><code class="lang-html">&lt;ol&gt;
     &lt;li&gt;Pierwszy element listy&lt;/li&gt;
@@ -392,8 +365,9 @@
                             </ol>
 
                             <h3>Dzielenie list, tabel między stronami</h3>
-<p>Jeśli na jednej stronie znajduje się jeden element listy, a na kolejnej następne elementy należy przenieść listę na jedną stronę.</p>
-<figure id="code11a"><figacption class="tfl-center">Przykład kodu HTML dla dzielenia listy między stronami.</figacption><pre><code class="lang-html">&lt;ul&gt;
+                            <p>Jeśli na jednej stronie znajduje się jeden element listy, a na kolejnej następne elementy należy przenieść listę na jedną stronę.</p>
+                            <figure id="code11a">
+                                <figacption class="tfl-center">Przykład kodu HTML dla dzielenia listy między stronami.</figacption><pre><code class="lang-html">&lt;ul&gt;
     &lt;li&gt;Pierwszy element listy&lt;/li&gt;
     &lt;li&gt;Drugi element listy
     &lt;span class=”nextPage”&gt;&lt;/span&gt;
@@ -401,17 +375,20 @@
     &lt;li&gt;Trzeci element listy&lt;/li&gt;
 &lt;/ul&gt;</code></pre></figure>
 
-<p>Jeśli tabela znajduje się na wielu stronach należy przed miejscem lokalizacji tabeli wstawić tyle znaczników podziału strony span z klasą nextPage na ilu stronach znajduje się duża tabela i po znacznikach dopisać słownie informację: Tabela nr XX znajduje się na 3 stronach publikacji: 121, 122, 123.</p>
-<figure id="code11b"><figacption class="tfl-center">Przykład kodu HTML dla dzielenia tabeli między stronami.</figacption><pre><code class="lang-html">&lt;span class=”nextPage”&gt;&lt;/span&gt;
+                            <p>Jeśli tabela znajduje się na wielu stronach należy przed miejscem lokalizacji tabeli wstawić tyle znaczników podziału strony span z klasą nextPage na ilu stronach znajduje się duża tabela i po znacznikach dopisać słownie informację:
+                                Tabela nr XX znajduje się na 3 stronach publikacji: 121, 122, 123.</p>
+                            <figure id="code11b">
+                                <figacption class="tfl-center">Przykład kodu HTML dla dzielenia tabeli między stronami.</figacption><pre><code class="lang-html">&lt;span class=”nextPage”&gt;&lt;/span&gt;
 &lt;span class=”nextPage”&gt;&lt;/span&gt;
 &lt;span class=”nextPage”&gt;&lt;/span&gt;
 &lt;p&gt;Tabela nr XX znajduje się na 3 stronach publikacji: 121, 122, 123.&lt;/p&gt;
 &lt;table&gt;&lt;/table&gt;</code></pre></figure>
-<h3>Spis treści</h3>
-<p>Spis treści tworzony jest skryptem .js z nagłówków - należy zachować odpowiednią hierarchię nagłówków, aby został stworzony.</p>
-<h3>Przypisy</h3>
-<p>Przypisy tworzymy poprzez linki, którym nadajemy unikalne id, tak aby można było zrobić odsyłacze do treści przypisu i z powrotem do treści głównej. </p>
-<figure id="code11"><figcaption class="tfl-center">Przykład kodu dla przypisów</figcaption><pre><code class="lang-html">&lt;a href="#1" id="ref1" class="footnote" aria-describedby="goTo"&gt;[1]&lt;/a&gt;
+                            <h3>Spis treści</h3>
+                            <p>Spis treści tworzony jest skryptem .js z nagłówków - należy zachować odpowiednią hierarchię nagłówków, aby został stworzony.</p>
+                            <h3>Przypisy</h3>
+                            <p>Przypisy tworzymy poprzez linki, którym nadajemy unikalne id, tak aby można było zrobić odsyłacze do treści przypisu i z powrotem do treści głównej. </p>
+                            <figure id="code11">
+                                <figcaption class="tfl-center">Przykład kodu dla przypisów</figcaption><pre><code class="lang-html">&lt;a href="#1" id="ref1" class="footnote" aria-describedby="goTo"&gt;[1]&lt;/a&gt;
     &lt;h2 id="footnote-label"&gt;Przypisy&lt;/h2&gt;
     &lt;div class="tfl-footer"&gt;
         &lt;ol class="none"&gt;
@@ -420,8 +397,9 @@
             &lt;/li&gt;
         &lt;/ol&gt;
     &lt;/div&gt;</code></pre></figure>
-<p>Jeśli w publikacji występują przypisy harwardzkie również należy nadać im unikalne id, rozróżnialne od przypisów dolnych. </p>
-<figure id="code12"><figcaption>Przykład kodu dla przyp[isów harwardzkich</figcaption><pre><code class="lang-html">&lt;a href="#h1" id="refh1" class="footnote-harvard" aria-describedby="goTo"&gt;[15]&lt;/a&gt;
+                            <p>Jeśli w publikacji występują przypisy harwardzkie również należy nadać im unikalne id, rozróżnialne od przypisów dolnych. </p>
+                            <figure id="code12">
+                                <figcaption>Przykład kodu dla przyp[isów harwardzkich</figcaption><pre><code class="lang-html">&lt;a href="#h1" id="refh1" class="footnote-harvard" aria-describedby="goTo"&gt;[15]&lt;/a&gt;
     &lt;h2 id="footnote-label"&gt;Przypisy harwardzkie&lt;/h2&gt;
     &lt;div class="tfl-footer"&gt;
         &lt;ol class="none"&gt;
@@ -431,20 +409,22 @@
         &lt;/ol&gt;
     &lt;/div&gt;</code></pre></figure>
 
-<h3>Skróty</h3>
-<p>Skróty występujące w tekście należy umieścić w znacznikach abbr, a rozwinięcie skrótu zapisać w atrybucie title. Dodatkowo na końcu publikacji należy umieścić wykaz skrótów jako nagłówek poziomu 2.</p>
-<p>Wykaz skrótów może być umieszczony np. przy pomocy listy punktowej. Należy przyjąć jeden wzór i stosować go do wszystkich publikacji.</p>
-<p>Skróty których nie rozwijamy:</p>
-<ul>
-    <li>itp.</li>
-    <li>itd.</li>
-    <li>m.in.</li>
-    <li>np.</li>
-    <li>str.</li>
-    <li>s. (jeżeli występuje w przypisach, w treści można rozwinąć)</li>
-    <li>tzn.</li>
-</ul>
-<figure id="code13"><figcaption>Przykład listy skrótów</figcaption></figure><pre><code class="lang-html">&lt;h2&gt;Spis skrótów&lt;/h2&gt;
+                            <h3>Skróty</h3>
+                            <p>Skróty występujące w tekście należy umieścić w znacznikach abbr, a rozwinięcie skrótu zapisać w atrybucie title. Dodatkowo na końcu publikacji należy umieścić wykaz skrótów jako nagłówek poziomu 2.</p>
+                            <p>Wykaz skrótów może być umieszczony np. przy pomocy listy punktowej. Należy przyjąć jeden wzór i stosować go do wszystkich publikacji.</p>
+                            <p>Skróty których nie rozwijamy:</p>
+                            <ul>
+                                <li>itp.</li>
+                                <li>itd.</li>
+                                <li>m.in.</li>
+                                <li>np.</li>
+                                <li>str.</li>
+                                <li>s. (jeżeli występuje w przypisach, w treści można rozwinąć)</li>
+                                <li>tzn.</li>
+                            </ul>
+                            <figure id="code13">
+                                <figcaption>Przykład listy skrótów</figcaption>
+                            </figure><pre><code class="lang-html">&lt;h2&gt;Spis skrótów&lt;/h2&gt;
     &lt;ol class="none"&gt;
         &lt;li&gt;&lt;abbr title="rok"&gt;r.&lt;/abbr&gt;&lt;/li&gt;
         &lt;li&gt;&lt;abbr title="kilobajt"&gt;kB&lt;/abbr&gt;&lt;/li&gt;
@@ -473,26 +453,28 @@
         &lt;li&gt;&lt;abbr title="herc"&gt;Hz&lt;/abbr&gt;&lt;/li&gt;
         &lt;li&gt;&lt;abbr title="minuta"&gt;min&lt;/abbr&gt;&lt;/li&gt;
     &lt;/ol&gt;</code></pre>
-<h3>Wyróżnienia w tekście</h3>
-<p>Wyróżnienia w tekście należy zachować jak w oryginale. Pismo pochyłe należy oznaczać tagiem em, pismo pogrubione strong. Jeśli w tekście występuje wyróżnienie jedynie kolorem należy przyjąć także inny sposób wyróżnienia, np. za pomocą pogrubienia.</p>
-<h3>Lista tabel</h3>
-<p>Należy pamiętać o tworzeniu unikalnych id dla tabel, aby móc stworzyć listę tabel z odnośnikami do powrotu do nich. </p>
-<h3>Lista grafik</h3>
-<p>Należy pamiętać o tworzeniu unikalnych id dla grafik, aby móc stworzyć listę grafik z odnośnikami do powrotu do nich. </p>
-<h3>Dialogi</h3>
-<p>Zapisując dialogi nie używamy list (ani punktowych, ani numerowanych) chyba, że w oryginale dialog jest przedstawiony za pomocą listy punktowej. W standardowym dialogu do zapisu używamy znacznika p oraz br. Osoby mówiące w danym dialogu wyróżniamy za pomocą strong(jeżeli w oryginale nie ma takiego wyróżnienia to też go nie stosujemy).</p>
-<figure id="code14"><figcaption>Przykładowy kod dla dialogu</figcaption><pre><code>&lt;p&gt;&lt;strong&gt;A&lt;/strong&gt;: Hey, I'm really sorry I'm late. I came as fast as I could.&lt;/p&gt;
+                            <h3>Wyróżnienia w tekście</h3>
+                            <p>Wyróżnienia w tekście należy zachować jak w oryginale. Pismo pochyłe należy oznaczać tagiem em, pismo pogrubione strong. Jeśli w tekście występuje wyróżnienie jedynie kolorem należy przyjąć także inny sposób wyróżnienia, np.
+                                za pomocą pogrubienia.</p>
+                            <h3>Lista tabel</h3>
+                            <p>Należy pamiętać o tworzeniu unikalnych id dla tabel, aby móc stworzyć listę tabel z odnośnikami do powrotu do nich. </p>
+                            <h3>Lista grafik</h3>
+                            <p>Należy pamiętać o tworzeniu unikalnych id dla grafik, aby móc stworzyć listę grafik z odnośnikami do powrotu do nich. </p>
+                            <h3>Dialogi</h3>
+                            <p>Zapisując dialogi nie używamy list (ani punktowych, ani numerowanych) chyba, że w oryginale dialog jest przedstawiony za pomocą listy punktowej. W standardowym dialogu do zapisu używamy znacznika p oraz br. Osoby mówiące w
+                                danym dialogu wyróżniamy za pomocą strong(jeżeli w oryginale nie ma takiego wyróżnienia to też go nie stosujemy).</p>
+                            <figure id="code14">
+                                <figcaption>Przykładowy kod dla dialogu</figcaption><pre><code>&lt;p&gt;&lt;strong&gt;A&lt;/strong&gt;: Hey, I'm really sorry I'm late. I came as fast as I could.&lt;/p&gt;
     &lt;p&gt;&lt;strong&gt;B&lt;/strong&gt;:  It's OK. Nobody has really come  yet.&lt;/p&gt;
     &lt;p&gt;&lt;strong&gt;A&lt;/strong&gt;: Why? Where are  they?&lt;/p&gt;
     &lt;p&gt;&lt;strong&gt;B&lt;/strong&gt;: Well, John  is shopping. He is getting some food.&lt;/p&gt;</code></pre></figure>
-<h3>Uwagi do wersji zaadaptowanej</h3>
-<p>Wszystkie zmiany odbiegające od oryginału powinny zostać krótko opisane w uwagach do adaptacji na początku dokumentu.</p>
-<p>Przed adaptacją treści należy uzupełnić dane początkowe tj. „Uwagi do wersji zaadaptowanej:” występujące na początku szablonu. W razie potrzeby należy dopisywać w miejsce uwag znaczące różnice, które występują między oryginałem a adaptacją.</p>
+                            <h3>Uwagi do wersji zaadaptowanej</h3>
+                            <p>Wszystkie zmiany odbiegające od oryginału powinny zostać krótko opisane w uwagach do adaptacji na początku dokumentu.</p>
+                            <p>Przed adaptacją treści należy uzupełnić dane początkowe tj. „Uwagi do wersji zaadaptowanej:” występujące na początku szablonu. W razie potrzeby należy dopisywać w miejsce uwag znaczące różnice, które występują między oryginałem
+                                a adaptacją.</p>
                 </main>
                 <footer>
-                    <p>Publikacja została zaadaptowana zgodnie z WCAG 2.1 na poziomie AA. Obecnie wersja v1.1. Szablon
-                        udostępniony na licencji <a
-                            href="https://github.com/tyflolab/szablon-WCAG/blob/master/LICENSE">MIT</a>.</p>
+                    <p>Publikacja została zaadaptowana zgodnie z WCAG 2.1 na poziomie AA. Obecnie wersja v1.1. Szablon udostępniony na licencji <a href="https://github.com/tyflolab/szablon-WCAG/blob/master/LICENSE">MIT</a>.</p>
                 </footer>
             </div>
         </div>
