@@ -6,14 +6,14 @@ W elemencie `head` dokumentu HTML należy uzupełnić informacje na jego temat.
 
 ```html
 <meta name="author" content="Magdalena Kruczek" />
-  <title>Specyfikacja adaptacji HTML</title>
+<title>Specyfikacja adaptacji HTML</title>
 ```
 
 W sekcji `header` dokumentu HTML należy uzupełnić tytuł oznaczony nagłówkiem pierwszego stopnia.
 
 ```html
 <header>
-<h1>Specyfikacja adaptacji HTML</h1>
+	<h1>Specyfikacja adaptacji HTML</h1>
 </header>
 ```
 
