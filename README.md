@@ -240,7 +240,8 @@ Jeśli w publikacji występują przypisy harwardzkie również należy nadać im
 ```
 
 ```html
-<h2 id="footnote-label">Przypisy harwardzkie</h2>
+<p id="goTo">Przejdź do treści przypisów</p>
+<h2>Przypisy harwardzkie</h2>
 <div class="tfl-footer">
 	<ol class="none">
   		<li id="h1">15. Rozwinięcie przypisu 
