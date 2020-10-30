@@ -223,7 +223,8 @@ Przypisy tworzymy poprzez linki, którym nadajemy unikalne id, tak aby można by
 ```
 
 ```html
-<h2 id="footnote-label">Przypisy</h2>
+<p id="goTo">Przejdź do treści przypisów</p>
+<h2>Przypisy</h2>
 <div class="tfl-footer">
 	<ol class="none">
   		<li id="1">1. Rozwinięcie przypisu 
