@@ -223,8 +223,7 @@ Przypisy tworzymy poprzez linki, którym nadajemy unikalne id, tak aby można by
 ```
 
 ```html
-<p id="goTo">Przejdź do treści przypisów</p>
-<h2>Przypisy</h2>
+<h2 id="footnote-label">Przypisy</h2>
 <div class="tfl-footer">
 	<ol class="none">
   		<li id="1">1. Rozwinięcie przypisu 
@@ -241,8 +240,7 @@ Jeśli w publikacji występują przypisy harwardzkie również należy nadać im
 ```
 
 ```html
-<p id="goTo">Przejdź do treści przypisów</p>
-<h2>Przypisy harwardzkie</h2>
+<h2 id="footnote-label">Przypisy harwardzkie</h2>
 <div class="tfl-footer">
 	<ol class="none">
   		<li id="h1">15. Rozwinięcie przypisu 
@@ -324,6 +322,20 @@ Przykładowo:
 <p><strong>B</strong>:  It's OK. Nobody has really come  yet.</p>
 <p><strong>A</strong>: Why? Where are  they?</p>
 <p><strong>B</strong>: Well, John  is shopping. He is getting some food.</p>
+```
+
+## Wyróżnienie ramką
+
+W atrybucie `aria-level=" "` autor powinien wpisać właściwy poziom zgodny z hierarchią struktury nagłówków w swoim rozdziale np. `aria-level"2"`, `aria-level="5"` itd.
+
+Przykładowo:
+
+```html
+ <div class="tfl-frame-highlight" role="region" aria-labelledby="region-heading">
+    <p class="sr-only" id="region-heading" role="heading" aria-level="2">Czarna ramka 		wyróżniająca fragment tekstu</p>
+	<p><strong>D. Flexicurity</strong></p>
+    Europejscy partnerzy społeczni uznają, iż dzisiejszy rynek pracy wymaga wdrożenia 		polityki, która miałaby wymiar zarówno elastyczności jak i bezpieczeństwa 				zatrudnienia dla pracowników podobnie jak i pracodawców. Właściwie wdrożone, 			podejście flexicurity może tworzyć sytuację, w której obie strony pracowników i 		pracodawców równo korzystają (win-win).
+</div>
 ```
 
 ## Uwagi do wersji zaadaptowanej
