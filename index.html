@@ -204,7 +204,7 @@
       &lt;details&gt;
           &lt;summary&gt;Szczegółowy opis grafiki&lt;/summary&gt;
          &lt;p&gt;
-         Tutaj umieszczamy szczegółowy opis grafiki.    
+         Tutaj umieszczamy szczegółowy opis grafiki.
          &lt;/p&gt;
       &lt;/details&gt;
     &lt;/figcaption&gt;
@@ -244,37 +244,36 @@
 
                     <h3>Wzory matematyczne</h3>
                     <p>Wzory matematyczne opisujemy za pomocą LaTeX zamykając je w podwójnych dolarach dla wzoru w nowej linii,
-                        <pre>$$ $$</pre> dla wzoru w tej samej linii zamknięcie w znacznikach
-                        <pre>\( \)</pre> $$ \partial K(x)=\left\{\gamma \in \mathcal{R}^{n}: K(y) \geqslant K(x)+\gamma^{T}(y-x), \forall y \in \mathcal{R}^{n}\right\}, x \in \mathcal{X}$$</p>
+                        <code>$$ $$</code> dla wzoru w tej samej linii zamknięcie w znacznikach
+                        <code>\( \)</code>. $$ \partial K(x)=\left\{\gamma \in \mathcal{R}^{n}: K(y) \geqslant K(x)+\gamma^{T}(y-x), \forall y \in \mathcal{R}^{n}\right\}, x \in \mathcal{X}$$</p>
                     <figure id="code5">
                         <figcaption class="tfl-center">Kod LaTeX dla wzoru w nowej linii</figcaption>
                         <pre><code class="lang-tex">$$ \partial K(x)=\left\{\gamma \in \mathcal{R}^{n}: K(y) \geqslant K(x)+\gamma^{T}(y-x), \forall y \in \mathcal{R}^{n}\right\}, x \in \mathcal{X}$$.</code></pre>
                     </figure>
-                    <p>Przykład wzoru w zdaniu \(M_{j}=\left\{: y_{i}-a_{i j}
-                        < 0\right\}\)</p>
-                            <figure id="code6">
-                                <figcaption class="tfl-center">Kod LaTeX dla wzoru umieszczonego w ciągu zdania
-                                </figcaption>
-                                <pre><code class="lang-tex">Przykład wzoru w zdaniu \(M_{j}=\left\{: y_{i}-a_{i j} < 0\right\}\)</code></pre>
-                            </figure>
-                            <p>Nie zostawiamy tekstów w indeksie górnym np. liczebniki porządkowe angielskie 6
-                                <sup>th</sup> zapisujemy jako 6th.</p>
+                    <p>Przykład wzoru w zdaniu \(M_{j}=\left\{: y_{i}-a_{i j} &lt; 0\right\}\)</p>
+                    <figure id="code6">
+                        <figcaption class="tfl-center">Kod LaTeX dla wzoru umieszczonego w ciągu zdania
+                        </figcaption>
+                        <pre><code class="lang-tex">Przykład wzoru w zdaniu \(M_{j}=\left\{: y_{i}-a_{i j} &lt; 0\right\}\)</code></pre>
+                    </figure>
+                    <p>Nie zostawiamy tekstów w indeksie górnym np. liczebniki porządkowe angielskie 6
+                        <sup>th</sup> zapisujemy jako 6th.</p>
 
-                            <h3>Kod źródłowy</h3>
-                            <p>Zapisując kod źródłowy należy użyć znaczników pre oraz code z odpowiednią klasą biblioteki highlight.js <a href="https://github.com/highlightjs/highlight.js/blob/master/SUPPORTED_LANGUAGES.md">Zobacz
+                    <h3>Kod źródłowy</h3>
+                    <p>Zapisując kod źródłowy należy użyć znaczników pre oraz code z odpowiednią klasą biblioteki highlight.js <a href="https://github.com/highlightjs/highlight.js/blob/master/SUPPORTED_LANGUAGES.md">Zobacz
                                     wykaz wspieranych języków i klas.</a></p>
-                            <p>Zapisując kod źródłowy z języku HTML należy zamienić znak
-                                < oraz> na & lt; oraz & gt;. Można posłużyć się do tego automatycznym narzędziem, np. <a href="https://www.opinionatedgeek.com/codecs/htmlencoder">HTML Encoder</a>.</p>
+                    <p>Zapisując kod źródłowy z języku HTML należy zamienić znak
+                        < oraz> na & lt; oraz & gt;. Można posłużyć się do tego automatycznym narzędziem, np. <a href="https://www.opinionatedgeek.com/codecs/htmlencoder">HTML Encoder</a>.</p>
 
-                            <figure id="code7">
-                                <figcaption class="tfl-center">Przykład kodu w języku javascript</figcaption>
-                                <pre>
+                    <figure id="code7">
+                        <figcaption class="tfl-center">Przykład kodu w języku javascript</figcaption>
+                        <pre>
     <code class="lang-javascript">
         function detectStructure() {
             let parent = model.documentRoot;
             $(":header:not(h1)").each(function () {
                 let headerLevel = this.nodeName.substring(1);
-                while (headerLevel <= parent.level && parent.parent) {
+                while (headerLevel &lt;= parent.level && parent.parent) {
                     parent = parent.parent;
                 }
 
@@ -287,12 +286,12 @@
                 }
             });
         };</code></pre>
-                            </figure>
+                    </figure>
 
-                            <figure id="code8">
-                                <figcaption class="tfl-center">Zapis kodu HTML z przykładem w języku javascript
-                                </figcaption>
-                                <pre><code class="lang-html">
+                    <figure id="code8">
+                        <figcaption class="tfl-center">Zapis kodu HTML z przykładem w języku javascript
+                        </figcaption>
+                        <pre><code class="lang-html">
     &lt;figure id="code7"&gt;
     &lt;figcaption class="tfl-center"&gt;Przykład zapisu kodu &lt;/figcaption&gt;
     &lt;pre&gt;&lt;code class="lang-javascript"&gt;
@@ -300,7 +299,7 @@
         let parent = model.documentRoot;
         $(":header:not(h1)").each(function () {
             let headerLevel = this.nodeName.substring(1);
-            while (headerLevel <= parent.level && parent.parent) {
+            while (headerLevel &lt;= parent.level && parent.parent) {
                 parent = parent.parent;
             }
 
@@ -315,31 +314,31 @@
     };
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/figure&gt;</code></pre>
-                            </figure>
-                            <h3>Oznaczenie języka</h3>
-                            <p>Język fragmentu tekstu należy oznaczyć poprzez umieszczenie wybranego fragmentu w znaczniku span oraz wybranie skrótu odpowiedniego języka np. en, pl, fr.</p>
-                            <figure id="code9">
-                                <figcaption>Przykład oznaczenia fragmentu tekstu w języku innym niż język dokumentu
-                                </figcaption>
-                                <pre><code class="lang=html">&lt;span lang="en"&gt;This text is in other language than the rest of the document&lt;/span&gt;
+                    </figure>
+                    <h3>Oznaczenie języka</h3>
+                    <p>Język fragmentu tekstu należy oznaczyć poprzez umieszczenie wybranego fragmentu w znaczniku span oraz wybranie skrótu odpowiedniego języka np. en, pl, fr.</p>
+                    <figure id="code9">
+                        <figcaption>Przykład oznaczenia fragmentu tekstu w języku innym niż język dokumentu
+                        </figcaption>
+                        <pre><code class="lang=html">&lt;span lang="en"&gt;This text is in other language than the rest of the document&lt;/span&gt;
 </code></pre>
-                            </figure>
-                            <ul>
-                                <li>Imiona i nazwiska w obcych językach oznaczamy jako język polski, a także nazwy własne (nazwy uczelni, nazwy miast, rzek).</li>
-                                <li>Odpowiednim językiem oznaczamy tytuły publikacji, występujące np. w bibliografii, w przypisach.
-                                </li>
-                                <li>Słowa takie jak „Facebook”, „Google”, „mail” itp. zostawiamy jako język polski.</li>
-                                <li>Słowa greckie, które są zapisane alfabetem łacińskim zostawiamy jako język polski, zaś te napisane alfabetem greckim oznaczamy jako język grecki. Podobnie z językiem rosyjskim, arabskim itp.</li>
-                            </ul>
-                            <h3>Cytaty</h3>
-                            <p>Cytaty w tej samej linii oznaczamy tagiem q, cytat długi w nowym wierszu za pomocą blockquote.
-                            </p>
-                            <p>Jeżeli cytat zaczyna się na jednej stronie, a kończy na drugiej, przenosimy jego całość na stronę na której się zaczyna (o ile jego zakończenie nie zajmuje więcej niż około 25% strony). Jeżeli zajmuje więcej należy zakończyć
-                                zdanie z cytatu zaczynające się na poprzedniej stronie, wpisujemy znacznik podziału strony (span z klasą nextPage) i kończymy cytat.</p>
-                            <h3>Lista, lista zagnieżdżona</h3>
-                            <p>Listę uporządkowaną tworzymy za pomocą znacznika ol, nieuporządkowane za pomocą znacznika ul. Listy HTML można dowolnie zagnieżdżać, rozpoczynać od wybranego numeru lub nadać jej klasę none i samemu dowolnie numerować. </p>
-                            <figure id="code10">
-                                <figcaption>Przykład numerowanej listy zagnieżdżonej</figcaption><pre><code class="lang-html">&lt;ol&gt;
+                    </figure>
+                    <ul>
+                        <li>Imiona i nazwiska w obcych językach oznaczamy jako język polski, a także nazwy własne (nazwy uczelni, nazwy miast, rzek).</li>
+                        <li>Odpowiednim językiem oznaczamy tytuły publikacji, występujące np. w bibliografii, w przypisach.
+                        </li>
+                        <li>Słowa takie jak „Facebook”, „Google”, „mail” itp. zostawiamy jako język polski.</li>
+                        <li>Słowa greckie, które są zapisane alfabetem łacińskim zostawiamy jako język polski, zaś te napisane alfabetem greckim oznaczamy jako język grecki. Podobnie z językiem rosyjskim, arabskim itp.</li>
+                    </ul>
+                    <h3>Cytaty</h3>
+                    <p>Cytaty w tej samej linii oznaczamy tagiem q, cytat długi w nowym wierszu za pomocą blockquote.
+                    </p>
+                    <p>Jeżeli cytat zaczyna się na jednej stronie, a kończy na drugiej, przenosimy jego całość na stronę na której się zaczyna (o ile jego zakończenie nie zajmuje więcej niż około 25% strony). Jeżeli zajmuje więcej należy zakończyć zdanie
+                        z cytatu zaczynające się na poprzedniej stronie, wpisujemy znacznik podziału strony (span z klasą nextPage) i kończymy cytat.</p>
+                    <h3>Lista, lista zagnieżdżona</h3>
+                    <p>Listę uporządkowaną tworzymy za pomocą znacznika ol, nieuporządkowane za pomocą znacznika ul. Listy HTML można dowolnie zagnieżdżać, rozpoczynać od wybranego numeru lub nadać jej klasę none i samemu dowolnie numerować. </p>
+                    <figure id="code10">
+                        <figcaption>Przykład numerowanej listy zagnieżdżonej</figcaption><pre><code class="lang-html">&lt;ol&gt;
     &lt;li&gt;Pierwszy element listy&lt;/li&gt;
     &lt;li&gt;Drugi element listy
         &lt;ul&gt;
@@ -350,21 +349,21 @@
     &lt;li&gt;Trzeci element listy&lt;/li&gt;
 &lt;/ol&gt;</code></pre></figure>
 
-                            <ol>
-                                <li>Pierwszy element listy</li>
-                                <li>Drugi element listy
-                                    <ul>
-                                        <li>Pierwszy element listy zagnieżdżonej</li>
-                                        <li>Drugi element listy zagnieżdżonej</li>
-                                    </ul>
-                                </li>
-                                <li>Trzeci element listy</li>
-                            </ol>
+                    <ol>
+                        <li>Pierwszy element listy</li>
+                        <li>Drugi element listy
+                            <ul>
+                                <li>Pierwszy element listy zagnieżdżonej</li>
+                                <li>Drugi element listy zagnieżdżonej</li>
+                            </ul>
+                        </li>
+                        <li>Trzeci element listy</li>
+                    </ol>
 
-                            <h3>Dzielenie list, tabel między stronami</h3>
-                            <p>Jeśli na jednej stronie znajduje się jeden element listy, a na kolejnej następne elementy należy przenieść listę na jedną stronę.</p>
-                            <figure id="code11a">
-                                <figacption class="tfl-center">Przykład kodu HTML dla dzielenia listy między stronami.</figacption><pre><code class="lang-html">&lt;ul&gt;
+                    <h3>Dzielenie list, tabel między stronami</h3>
+                    <p>Jeśli na jednej stronie znajduje się jeden element listy, a na kolejnej następne elementy należy przenieść listę na jedną stronę.</p>
+                    <figure id="code11a">
+                        <figcaption class="tfl-center">Przykład kodu HTML dla dzielenia listy między stronami.</figcaption><pre><code class="lang-html">&lt;ul&gt;
     &lt;li&gt;Pierwszy element listy&lt;/li&gt;
     &lt;li&gt;Drugi element listy
     &lt;span class=”nextPage”&gt;&lt;/span&gt;
@@ -372,56 +371,56 @@
     &lt;li&gt;Trzeci element listy&lt;/li&gt;
 &lt;/ul&gt;</code></pre></figure>
 
-                            <p>Jeśli tabela znajduje się na wielu stronach należy przed miejscem lokalizacji tabeli wstawić tyle znaczników podziału strony span z klasą nextPage na ilu stronach znajduje się duża tabela i po znacznikach dopisać słownie informację:
-                                Tabela nr XX znajduje się na 3 stronach publikacji: 121, 122, 123.</p>
-                            <figure id="code11b">
-                                <figacption class="tfl-center">Przykład kodu HTML dla dzielenia tabeli między stronami.</figacption><pre><code class="lang-html">&lt;span class=”nextPage”&gt;&lt;/span&gt;
+                    <p>Jeśli tabela znajduje się na wielu stronach należy przed miejscem lokalizacji tabeli wstawić tyle znaczników podziału strony span z klasą nextPage na ilu stronach znajduje się duża tabela i po znacznikach dopisać słownie informację:
+                        Tabela nr XX znajduje się na 3 stronach publikacji: 121, 122, 123.</p>
+                    <figure id="code11b">
+                        <figcaption class="tfl-center">Przykład kodu HTML dla dzielenia tabeli między stronami.</figacption><pre><code class="lang-html">&lt;span class=”nextPage”&gt;&lt;/span&gt;
 &lt;span class=”nextPage”&gt;&lt;/span&gt;
 &lt;span class=”nextPage”&gt;&lt;/span&gt;
 &lt;p&gt;Tabela nr XX znajduje się na 3 stronach publikacji: 121, 122, 123.&lt;/p&gt;
 &lt;table&gt;&lt;/table&gt;</code></pre></figure>
-                            <h3>Spis treści</h3>
-                            <p>Spis treści tworzony jest skryptem .js z nagłówków - należy zachować odpowiednią hierarchię nagłówków, aby został stworzony.</p>
-                            <h3>Przypisy</h3>
-                            <p>Przypisy tworzymy poprzez linki, którym nadajemy unikalne id, tak aby można było zrobić odsyłacze do treści przypisu i z powrotem do treści głównej. </p>
-                            <figure id="code11">
-                                <figcaption class="tfl-center">Przykład kodu dla przypisów</figcaption><pre><code class="lang-html">&lt;a href="#1" id="ref1" class="footnote" aria-describedby="goTo"&gt;[1]&lt;/a&gt;
+                    <h3>Spis treści</h3>
+                    <p>Spis treści tworzony jest skryptem .js z nagłówków - należy zachować odpowiednią hierarchię nagłówków, aby został stworzony.</p>
+                    <h3>Przypisy</h3>
+                    <p>Przypisy tworzymy poprzez linki, którym nadajemy unikalne id, tak aby można było zrobić odsyłacze do treści przypisu i z powrotem do treści głównej. </p>
+                    <figure id="code11">
+                        <figcaption class="tfl-center">Przykład kodu dla przypisów</figcaption><pre><code class="lang-html">&lt;a href="#1" id="ref1" class="footnote" aria-describedby="goTo"&gt;[1]&lt;/a&gt;
     &lt;h2 id="footnote-label"&gt;Przypisy&lt;/h2&gt;
     &lt;div class="tfl-footer"&gt;
         &lt;ol class="none"&gt;
-              &lt;li id="1"&gt;1. Rozwinięcie przypisu 
+              &lt;li id="1"&gt;1. Rozwinięcie przypisu
                 &lt;a href="#ref1"&gt;&lt;img src=https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/box-arrow-in-up-left.svg alt="Wróć do treści"&gt;&lt;/a&gt;
             &lt;/li&gt;
         &lt;/ol&gt;
     &lt;/div&gt;</code></pre></figure>
-                            <p>Jeśli w publikacji występują przypisy harwardzkie również należy nadać im unikalne id, rozróżnialne od przypisów dolnych. </p>
-                            <figure id="code12">
-                                <figcaption>Przykład kodu dla przyp[isów harwardzkich</figcaption><pre><code class="lang-html">&lt;a href="#h1" id="refh1" class="footnote-harvard" aria-describedby="goTo"&gt;[15]&lt;/a&gt;
+                    <p>Jeśli w publikacji występują przypisy harwardzkie również należy nadać im unikalne id, rozróżnialne od przypisów dolnych. </p>
+                    <figure id="code12">
+                        <figcaption>Przykład kodu dla przyp[isów harwardzkich</figcaption><pre><code class="lang-html">&lt;a href="#h1" id="refh1" class="footnote-harvard" aria-describedby="goTo"&gt;[15]&lt;/a&gt;
     &lt;h2 id="footnote-label"&gt;Przypisy harwardzkie&lt;/h2&gt;
     &lt;div class="tfl-footer"&gt;
         &lt;ol class="none"&gt;
-              &lt;li id="h1"&gt;15. Rozwinięcie przypisu 
+              &lt;li id="h1"&gt;15. Rozwinięcie przypisu
                 &lt;a href="#refh1"&gt;&lt;img src=https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/box-arrow-in-up-left.svg alt="Wróć do treści"&gt;&lt;/a&gt;
             &lt;/li&gt;
         &lt;/ol&gt;
     &lt;/div&gt;</code></pre></figure>
 
-                            <h3>Skróty</h3>
-                            <p>Skróty występujące w tekście należy umieścić w znacznikach abbr, a rozwinięcie skrótu zapisać w atrybucie title. Dodatkowo na końcu publikacji należy umieścić wykaz skrótów jako nagłówek poziomu 2.</p>
-                            <p>Wykaz skrótów może być umieszczony np. przy pomocy listy punktowej. Należy przyjąć jeden wzór i stosować go do wszystkich publikacji.</p>
-                            <p>Skróty których nie rozwijamy:</p>
-                            <ul>
-                                <li>itp.</li>
-                                <li>itd.</li>
-                                <li>m.in.</li>
-                                <li>np.</li>
-                                <li>str.</li>
-                                <li>s. (jeżeli występuje w przypisach, w treści można rozwinąć)</li>
-                                <li>tzn.</li>
-                            </ul>
-                            <figure id="code13">
-                                <figcaption>Przykład listy skrótów</figcaption>
-                            </figure><pre><code class="lang-html">&lt;h2&gt;Spis skrótów&lt;/h2&gt;
+                    <h3>Skróty</h3>
+                    <p>Skróty występujące w tekście należy umieścić w znacznikach abbr, a rozwinięcie skrótu zapisać w atrybucie title. Dodatkowo na końcu publikacji należy umieścić wykaz skrótów jako nagłówek poziomu 2.</p>
+                    <p>Wykaz skrótów może być umieszczony np. przy pomocy listy punktowej. Należy przyjąć jeden wzór i stosować go do wszystkich publikacji.</p>
+                    <p>Skróty których nie rozwijamy:</p>
+                    <ul>
+                        <li>itp.</li>
+                        <li>itd.</li>
+                        <li>m.in.</li>
+                        <li>np.</li>
+                        <li>str.</li>
+                        <li>s. (jeżeli występuje w przypisach, w treści można rozwinąć)</li>
+                        <li>tzn.</li>
+                    </ul>
+                    <figure id="code13">
+                        <figcaption>Przykład listy skrótów</figcaption>
+                        <pre><code class="lang-html">&lt;h2&gt;Spis skrótów&lt;/h2&gt;
     &lt;ol class="none"&gt;
         &lt;li&gt;&lt;abbr title="rok"&gt;r.&lt;/abbr&gt;&lt;/li&gt;
         &lt;li&gt;&lt;abbr title="kilobajt"&gt;kB&lt;/abbr&gt;&lt;/li&gt;
@@ -450,25 +449,45 @@
         &lt;li&gt;&lt;abbr title="herc"&gt;Hz&lt;/abbr&gt;&lt;/li&gt;
         &lt;li&gt;&lt;abbr title="minuta"&gt;min&lt;/abbr&gt;&lt;/li&gt;
     &lt;/ol&gt;</code></pre>
-                            <h3>Wyróżnienia w tekście</h3>
-                            <p>Wyróżnienia w tekście należy zachować jak w oryginale. Pismo pochyłe należy oznaczać tagiem em, pismo pogrubione strong. Jeśli w tekście występuje wyróżnienie jedynie kolorem należy przyjąć także inny sposób wyróżnienia, np.
-                                za pomocą pogrubienia.</p>
-                            <h3>Lista tabel</h3>
-                            <p>Należy pamiętać o tworzeniu unikalnych id dla tabel, aby móc stworzyć listę tabel z odnośnikami do powrotu do nich. </p>
-                            <h3>Lista grafik</h3>
-                            <p>Należy pamiętać o tworzeniu unikalnych id dla grafik, aby móc stworzyć listę grafik z odnośnikami do powrotu do nich. </p>
-                            <h3>Dialogi</h3>
-                            <p>Zapisując dialogi nie używamy list (ani punktowych, ani numerowanych) chyba, że w oryginale dialog jest przedstawiony za pomocą listy punktowej. W standardowym dialogu do zapisu używamy znacznika p oraz br. Osoby mówiące w
-                                danym dialogu wyróżniamy za pomocą strong(jeżeli w oryginale nie ma takiego wyróżnienia to też go nie stosujemy).</p>
-                            <figure id="code14">
-                                <figcaption>Przykładowy kod dla dialogu</figcaption><pre><code>&lt;p&gt;&lt;strong&gt;A&lt;/strong&gt;: Hey, I'm really sorry I'm late. I came as fast as I could.&lt;/p&gt;
+                    </figure>
+                    <h3>Wyróżnienia w tekście</h3>
+                    <p>Wyróżnienia w tekście należy zachować jak w oryginale. Pismo pochyłe należy oznaczać tagiem em, pismo pogrubione strong. Jeśli w tekście występuje wyróżnienie jedynie kolorem należy przyjąć także inny sposób wyróżnienia, np. za pomocą
+                        pogrubienia.
+                    </p>
+                    <h3>Lista tabel</h3>
+                    <p>Należy pamiętać o tworzeniu unikalnych id dla tabel, aby móc stworzyć listę tabel z odnośnikami do powrotu do nich. </p>
+                    <h3>Lista grafik</h3>
+                    <p>Należy pamiętać o tworzeniu unikalnych id dla grafik, aby móc stworzyć listę grafik z odnośnikami do powrotu do nich. </p>
+                    <h3>Dialogi</h3>
+                    <p>Zapisując dialogi nie używamy list (ani punktowych, ani numerowanych) chyba, że w oryginale dialog jest przedstawiony za pomocą listy punktowej. W standardowym dialogu do zapisu używamy znacznika p oraz br. Osoby mówiące w danym dialogu
+                        wyróżniamy za pomocą strong(jeżeli w oryginale nie ma takiego wyróżnienia to też go nie stosujemy).</p>
+                    <figure id="code14">
+                        <figcaption>Przykładowy kod dla dialogu</figcaption><pre><code>&lt;p&gt;&lt;strong&gt;A&lt;/strong&gt;: Hey, I'm really sorry I'm late. I came as fast as I could.&lt;/p&gt;
     &lt;p&gt;&lt;strong&gt;B&lt;/strong&gt;:  It's OK. Nobody has really come  yet.&lt;/p&gt;
     &lt;p&gt;&lt;strong&gt;A&lt;/strong&gt;: Why? Where are  they?&lt;/p&gt;
     &lt;p&gt;&lt;strong&gt;B&lt;/strong&gt;: Well, John  is shopping. He is getting some food.&lt;/p&gt;</code></pre></figure>
-                            <h3>Uwagi do wersji zaadaptowanej</h3>
-                            <p>Wszystkie zmiany odbiegające od oryginału powinny zostać krótko opisane w uwagach do adaptacji na początku dokumentu.</p>
-                            <p>Przed adaptacją treści należy uzupełnić dane początkowe tj. „Uwagi do wersji zaadaptowanej:” występujące na początku szablonu. W razie potrzeby należy dopisywać w miejsce uwag znaczące różnice, które występują między oryginałem
-                                a adaptacją.</p>
+                    <h3>Wyróżnienie ramką</h3>
+                    <p>W atrybucie aria-level=" " autor powinien wpisać właściwy poziom zgodny z hierarchią struktury nagłówków w swoim rozdziale np. aria-level"2", aria-level="5" itd.</p>
+                    <figure id="code15">
+                        <figcaption>Przykładowy kod dla wyróżnienia tekstu ramką</figcaption><pre><code>&lt;div class="tfl-frame-highlight" role="region" aria-labelledby="region-heading"&gt;
+	&lt;p class="sr-only" id="region-heading" role="heading" aria-level="2"&gt;Czarna ramka wyróżniająca fragment tekstu&lt;/p&gt;
+	&lt;p&gt;&lt;strong&gt;D. Flexicurity&lt;/strong&gt;&lt;/p&gt;
+	Europejscy partnerzy społeczni uznają, iż dzisiejszy rynek pracy wymaga wdrożenia
+	polityki, która miałaby wymiar zarówno elastyczności jak i bezpieczeństwa zatrudnienia
+	dla pracowników podobnie jak i pracodawców. Właściwie wdrożone, podejście
+	flexicurity może tworzyć sytuację, w której obie strony pracowników i pracodawców
+	równo korzystają (win-win).
+&lt;/div&gt;</code></pre></figure>
+                    <p><strong>Rezultat wykonania powyższego kodu:</strong></p>
+                    <div class="tfl-frame-highlight" role="region" aria-labelledby="region-heading">
+                        <p class="sr-only" id="region-heading" role="heading" aria-level="2">Czarna ramka wyróżniająca fragment tekstu</p>
+                        <p><strong>D. Flexicurity</strong></p>
+                        Europejscy partnerzy społeczni uznają, iż dzisiejszy rynek pracy wymaga wdrożenia polityki, która miałaby wymiar zarówno elastyczności jak i bezpieczeństwa zatrudnienia dla pracowników podobnie jak i pracodawców. Właściwie wdrożone, podejście flexicurity
+                        może tworzyć sytuację, w której obie strony pracowników i pracodawców równo korzystają (win-win).
+                    </div>
+                    <h3>Uwagi do wersji zaadaptowanej</h3>
+                    <p>Wszystkie zmiany odbiegające od oryginału powinny zostać krótko opisane w uwagach do adaptacji na początku dokumentu.</p>
+                    <p>Przed adaptacją treści należy uzupełnić dane początkowe tj. „Uwagi do wersji zaadaptowanej:” występujące na początku szablonu. W razie potrzeby należy dopisywać w miejsce uwag znaczące różnice, które występują między oryginałem a adaptacją.</p>
                 </main>
                 <footer>
                     <p>Publikacja została zaadaptowana zgodnie z WCAG 2.1 na poziomie AA. Obecnie wersja v1.1. Szablon udostępniony na licencji <a href="https://github.com/tyflolab/szablon-WCAG/blob/master/LICENSE">MIT</a>.</p>
