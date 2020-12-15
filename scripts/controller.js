@@ -25,11 +25,11 @@ var ctrl = function () {
     }
 
     function navigateToNextPage() {
-        _navigateToPage(model.currentPage + 1);
+        _navigateToPage(parseInt(model.currentPage) + 1);
     }
 
     function navigateToPrevPage() {
-        _navigateToPage(model.currentPage - 1);
+        _navigateToPage(parseInt(model.currentPage) - 1);
     }
 
     function navigateToNextChapter() {
