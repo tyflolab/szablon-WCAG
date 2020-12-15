@@ -122,7 +122,9 @@ $$
 Przykład wzoru w zdaniu \(M_{j}=\left\{: y_{i}-a_{i j} < 0\right\}\)
 ```
 
-Nie zostawiamy tekstów w indeksie górnym np. liczebniki porządkowe angielskie 6<sup>th</sup> zapisujemy jako 6th.
+Nie zostawiamy tekstów w indeksie górnym np. liczebniki porządkowe angielskie 6<sup>th</sup> zapisujemy jako 6th. 
+
+Zastosowana konfiguracja biblioteki JavaScript MathJax może generować problemy z rozpoznaniem niektórych elementów składni dla zapisu równań matematycznych za pomocą LaTeX. Dlatego jeśli w składni zapisu równania pojawi się m.in. element pogrubiający jej składowe (\\boldsymbol) należy zamienić go na element o podobnym znaczeniu i wyglądzie (\\mathbf).
 
 ## Kod źródłowy
 
@@ -326,17 +328,33 @@ Przykładowo:
 
 ## Wyróżnienie ramką
 
-W atrybucie `aria-level=" "` autor powinien wpisać właściwy poziom zgodny z hierarchią struktury nagłówków w swoim rozdziale np. `aria-level"2"`, `aria-level="5"` itd.
+1. **Ważne informacje (twierdzenia, definicje i inne merytorycznie ważne treści)**
 
-Przykładowo:
+   W atrybucie `aria-level=" "` autor powinien wpisać właściwy poziom zgodny z hierarchią struktury nagłówków w swoim rozdziale np. `aria-level"2"`, `aria-level="5"` itd. W znaczniku `<p class="sr-only"`, należy umieścić informacje zgodnie z treścią książki, np. jeżeli ramka wyróżnia twierdzenie znajdujące się w rozdziale (nagłówek h2) to wtedy przykładowy fragment kodu może wyglądać następująco:
 
-```html
- <div class="tfl-frame-highlight" role="region" aria-labelledby="region-heading">
-    <p class="sr-only" id="region-heading" role="heading" aria-level="2">Czarna ramka 		wyróżniająca fragment tekstu</p>
-	<p><strong>D. Flexicurity</strong></p>
-    Europejscy partnerzy społeczni uznają, iż dzisiejszy rynek pracy wymaga wdrożenia 		polityki, która miałaby wymiar zarówno elastyczności jak i bezpieczeństwa 				zatrudnienia dla pracowników podobnie jak i pracodawców. Właściwie wdrożone, 			podejście flexicurity może tworzyć sytuację, w której obie strony pracowników i 		pracodawców równo korzystają (win-win).
-</div>
-```
+   ```html
+   <div class="tfl-frame-highlight" role="region" aria-labelledby="region-heading">
+       <p class="sr-only" id="region-heading" role="heading" aria-level="2">Czarna ramka 		wyróżniająca fragment tekstu</p>
+   	<p><strong>D. Flexicurity</strong></p>
+       Europejscy partnerzy społeczni uznają, iż dzisiejszy rynek pracy wymaga wdrożenia
+       polityki, która miałaby wymiar zarówno elastyczności jak i bezpieczeństwa 			zatrudnienia dla pracowników podobnie jak i pracodawców. Właściwie wdrożone, 		podejście flexicurity może tworzyć sytuację, w której obie strony pracowników i 	pracodawców równo korzystają (win-win).
+   </div>
+   ```
+
+2. **Wyróżnienie mniej istotnych elementów**
+
+   Stałe elementy struktury książki oznaczone ramką, np. cytaty, informacje poboczne, treści, które nie są bardziej ważne niż pozostała treść, ale wyróżnienie nie występuje tylko ze względów dekoracyjnych. Tego oznaczenia możemy używać również do elementów, takich jak treści na marginesie strony lub innych niestandardowych treści, które posiadają wyróżnienie.
+
+   Przykładowy fragment kodu może wyglądać następująco:
+
+   ```html
+   <div class="tfl-highlight" role="region" aria-labelledby="region-custom-heading">
+       <p class="sr-only" id="region-custom-heading">Informacja na marginesie strony</p>
+   	<p><strong>generate</strong> - generować</p>
+       <p><strong>generation</strong> - pokolenie</p>
+       <p><strong>get</strong> - dostać</p>
+   </div>
+   ```
 
 ## Uwagi do wersji zaadaptowanej
 
