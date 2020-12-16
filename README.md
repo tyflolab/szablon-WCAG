@@ -124,7 +124,7 @@ Przykład wzoru w zdaniu \(M_{j}=\left\{: y_{i}-a_{i j} < 0\right\}\)
 
 Nie zostawiamy tekstów w indeksie górnym np. liczebniki porządkowe angielskie 6<sup>th</sup> zapisujemy jako 6th. 
 
-Zastosowana konfiguracja biblioteki JavaScript MathJax może generować problemy z rozpoznaniem niektórych elementów składni dla zapisu równań matematycznych za pomocą LaTeX. Dlatego jeśli w składni zapisu równania pojawi się m.in. element pogrubiający jej składowe (\\boldsymbol) należy zamienić go na element o podobnym znaczeniu i wyglądzie (\\mathbf).
+Zastosowana konfiguracja biblioteki JavaScript MathJax może generować problemy z rozpoznaniem niektórych elementów składni dla zapisu równań matematycznych za pomocą LaTeX. Dlatego jeśli w składni zapisu równania pojawi się m.in. element pogrubiający jej składowe (\boldsymbol) należy zamienić go na element o podobnym znaczeniu i wyglądzie (\mathbf). Zamianę tą wykonujemy w przypadku wszystkich znaków poza literami alfabetu greckiego, dla których należy pozostawić komendę \boldsymbol.
 
 ## Kod źródłowy
 
