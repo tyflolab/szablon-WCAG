@@ -1,8 +1,7 @@
-
 /**
  * Controller handles all user interactions;
  */
-var ctrl = function () {
+var ctrl = function() {
 
     function navigateToPage() {
         event.preventDefault();
@@ -17,10 +16,10 @@ var ctrl = function () {
         _navigateToPage(form.pageInput);
     }
     var Util = {
-        isNotValidPageNumber: function (pageNumber) {
-            return !Number.isInteger(+pageNumber)
-                || +pageNumber > model.totalPageNumbers
-                || +pageNumber < 1;
+        isNotValidPageNumber: function(pageNumber) {
+            return !Number.isInteger(+pageNumber) ||
+                +pageNumber > model.totalPageNumbers ||
+                +pageNumber < 1;
         }
     }
 
@@ -69,9 +68,9 @@ var ctrl = function () {
     }
 
     function _isNotValidPageNumber(pageNumber) {
-        return !Number.isInteger(+pageNumber)
-            || +pageNumber > model.totalPageNumbers
-            || +pageNumber < 1;
+        return !Number.isInteger(+pageNumber) ||
+            +pageNumber > model.totalPageNumbers ||
+            +pageNumber < 1;
     }
 
     return {
@@ -84,7 +83,7 @@ var ctrl = function () {
 }();
 
 var util = {
-    createPageId: function (pageNumber) {
+    createPageId: function(pageNumber) {
         return `page-${pageNumber}`;
     }
 }
@@ -92,7 +91,7 @@ var util = {
 /**
  * Main function
  */
-var main = function () {
+var main = function() {
     view.createPages();
     view.detectStructure();
     view.createTableOfContent();
@@ -101,5 +100,6 @@ var main = function () {
     view.createTooltips();
     hljs.initHighlightingOnLoad();
     view.createCopyButtons();
+    view.renderTree();
     new ClipboardJS('.copy-btn');
 }();

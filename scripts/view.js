@@ -1,4 +1,4 @@
-var view = function () {
+var view = function() {
     const pageInput = $('#pageInput');
     const $nextPageButton = $("#nextPageBtn");
     const $prevPageButton = $("#prevPageBtn");
@@ -7,7 +7,7 @@ var view = function () {
     let codeSnippetsCounter = 0;
 
     function createPages() {
-        $('.nextPage').not(":last").each(function () {
+        $('.nextPage').not(":last").each(function() {
             model.totalPageNumbers++;
             const $pageElement = $(`<br><span id="${util.createPageId(model.totalPageNumbers)}" class="page-number" tabindex="-1">Strona: ${model.totalPageNumbers}</span>`);
             $pageElement.insertAfter(this);
@@ -17,7 +17,7 @@ var view = function () {
     };
 
     function createCopyButtons() {
-        $('pre').each(function (index, element) {
+        $('pre').each(function(index, element) {
             const codeSnippetId = `snippet-${codeSnippetsCounter}`;
             element.setAttribute('id', codeSnippetId);
             codeSnippetsCounter++;
@@ -32,7 +32,7 @@ var view = function () {
     function detectStructure() {
         let parent = model.documentRoot;
         $('h1').addClass('chap-0');
-        $(':header:not(h1)').each(function () {
+        $(':header:not(h1)').each(function() {
             let headerLevel = this.nodeName.substring(1);
             while (headerLevel <= parent.level && parent.parent) {
                 parent = parent.parent;
@@ -79,7 +79,8 @@ var view = function () {
     };
 
     function _updateCurrentPageState() {
-        let current = 0, next = 1;
+        let current = 0,
+            next = 1;
         let currentPage;
         while (!currentPage && next < model.documentPageElements.length) {
             const top = model.documentPageElements[current].getBoundingClientRect().top;
@@ -128,7 +129,7 @@ var view = function () {
 
     function spyOnCurrentChapter() {
         $('body').scrollspy({ target: '#tableOfContent', offset: 10 });
-        $(window).on('activate.bs.scrollspy', function (event, target) {
+        $(window).on('activate.bs.scrollspy', function(event, target) {
             model.currentChapterId = target.relatedTarget.replace('#', '');
             const navbar = [...document.getElementsByClassName('tfl-side-navbar')][0];
             const activeLinks = [...document.getElementsByClassName('nav-link active')];
@@ -141,7 +142,7 @@ var view = function () {
     }
 
     function _updateChapterButtonState() {
-        const firstChapterNode = model.documentStructure[1];//because 0 element is root 
+        const firstChapterNode = model.documentStructure[1]; //because 0 element is root 
         const lastChapterNode = model.documentStructure[model.documentStructure.length - 1];
 
         if (model.currentChapterId !== '') {
@@ -161,7 +162,7 @@ var view = function () {
     }
 
     function createTooltips() {
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('[data-toggle="tooltip"]').tooltip();
         });
     }
@@ -179,6 +180,11 @@ var view = function () {
         parent.children.push(newNode);
         model.documentStructure.push(newNode);
         return newNode;
+    };
+
+    function renderTree() {
+        const treeGroup = document.querySelector('#tfl-deque-tree-no-select');
+        deque.createTree({ selectStyle: '' }, treeGroup);
     };
 
     return {
@@ -209,8 +215,10 @@ var view = function () {
         /**
          * Creates copy buttons for code snipets
          */
-        createCopyButtons
+        createCopyButtons,
+        /**
+         * Creating a graph representation structure
+         */
+        renderTree
     }
 }();
-
-
