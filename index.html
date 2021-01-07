@@ -544,7 +544,7 @@
                         pomiędzy nimi, mapy myśli, itd.</p>
                     <p>Aby zacząć tworzyć taką postać zagnieżdżonej listy należy rozpocząć jej tworzenie od umieszczenia elementu korzenia diagramu wewnątrz znacznika ul z wartością tree atrybutu role znacznika:</p>
                     <figure id="code17">
-                        <pre><code>&lt;div id="tfl-deque-tree-no-select" class="tfl-deque-tree tfl-left"&gt;
+                        <pre><code>&lt;div class="tfl-deque-tree-no-select tfl-deque-tree tfl-left"&gt;
     &lt;div id="tfl-deque-tree-root"&gt;
         &lt;ul role="tree"&gt;
         &lt;!--Miejsce umieszczenia korzenia wraz z kolejnymi elementami listy reprezentującej diagram--&gt;
@@ -588,7 +588,7 @@
                     </figure>
                     <p>Natomiast jeśli jest rodzicem kolejnych wierzchołków takiego grafu to należy opisać go poniższym kodem wraz z umieszczeniem kolejnych jego elementów (jego dzieci) w znaczniku ul listy.</p>
                     <figure id="code21">
-                        <pre><code>&lt;li role="treeitem" aria-label="wartość rodzica" data-tree-root="deque-tree-root" tabindex="-1" aria-expanded="false"&gt;
+                        <pre><code>&lt;li role="treeitem" aria-label="wartość rodzica" data-tree-root="tfl-deque-tree-root" tabindex="-1" aria-expanded="false"&gt;
     &lt;div class="tfl-deque-tree-branch" aria-hidden="true"&gt;&lt;/div&gt;
     &lt;span class="tfl-deque-tree-label"&gt;wartość rodzica&lt;/span&gt;
     &lt;ul role="group"&gt;
@@ -609,7 +609,7 @@
                                 <p class="tfl-left">
                                     Korzeniem drzewa jest węzeł 100. Przykład tego, w jaki sposób rozchodzi się drzewo, można przedstawić za pomocą poniższej listy:
                                 </p>
-                                <div id="tfl-deque-tree-no-select" class="tfl-deque-tree tfl-left">
+                                <div class="tfl-deque-tree-no-select tfl-deque-tree tfl-left">
                                     <div id="tfl-deque-tree-root">
                                         <ul role="tree">
                                             <li role="treeitem" aria-label="100" data-tree-root="tfl-deque-tree-root" tabindex="0" aria-expanded="false">

@@ -183,8 +183,10 @@ var view = function() {
     };
 
     function renderTree() {
-        const treeGroup = document.querySelector('#tfl-deque-tree-no-select');
-        deque.createTree({ selectStyle: '' }, treeGroup);
+        const treeGroup = $('.tfl-deque-tree-no-select');
+        for (let i = 0; i < treeGroup.length; i++) {
+            deque.createTree({ selectStyle: '' }, treeGroup[i]);
+        }
     };
 
     return {
