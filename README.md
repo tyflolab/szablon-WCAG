@@ -360,10 +360,10 @@ Przykładowo:
 
 W przypadku gdy w publikacji istnieją złożone reprezentacje graficzne, których opis alternatywny może być trudny w redakcji, lub zbyt zawiły dla użytkowników czytników technologii asystujących istnieje możliwość przedstawienia ich zawartości w postaci multimodalnego narzędzia, które pozwala na aktywną eksploracje za pomocą klawiatury pomiędzy poszczególnymi poziomami zależnościami przedstawianymi użytkownikowi. Rozwiązanie to wskazane jest dla grafik prezentujących różnego rodzaju zależności, hierarchię poszczególnych elementów, a także w wypadku potrzeby nadania dodatkowej semantyki redagowanemu opisowi. Informacje Mogą to być informacje w postaci grafów, różnego rodzaju drzew, schematów i zależności pomiędzy nimi, mapy myśli, itd.
 
-Aby zacząć tworzyć taką postać zagnieżdżonej listy należy rozpocząć jej tworzenie od umieszczenia elementu korzenia diagramu wewnątrz znacznika `ul` z wartością **tree** atrybutu role znacznika:
+Aby zacząć tworzyć taką postać zagnieżdżonej listy należy rozpocząć jej tworzenie od umieszczenia elementu korzenia diagramu wewnątrz znacznika `ul` z wartością **tree** atrybutu role znacznika. Jeśli w naszej publikacji zdecydujemy się na zastosowanie większej ilości tego typu listy to należy pamiętać o zmianie id dla każdej kolejnej listy w tym elemencie `<div id="tfl-deque-tree-root">` oraz każdym atrybucie **data-tree-root**, w którym należy wprowadzić wspomniany identyfikator:
 
 ```html
-<div id="tfl-deque-tree-no-select" class="tfl-deque-tree tfl-left">
+<div class="tfl-deque-tree-no-select tfl-deque-tree tfl-left">
     <div id="tfl-deque-tree-root">
         <ul role="tree">
         <!--Miejsce umieszczenia korzenia wraz z kolejnymi elementami listy reprezentującej diagram-->
@@ -411,7 +411,7 @@ Ostatnim krokiem opisu diagramów przy użyciu zagnieżdżonych listy jest defin
 Natomiast jeśli jest rodzicem kolejnych wierzchołków takiego grafu to należy opisać go poniższym kodem wraz z umieszczeniem kolejnych jego elementów (jego dzieci) w znaczniku `ul` listy.
 
 ```html
-<li role="treeitem" aria-label="wartość rodzica" data-tree-root="deque-tree-root" tabindex="-1" aria-expanded="false">
+<li role="treeitem" aria-label="wartość rodzica" data-tree-root="tfl-deque-tree-root" tabindex="-1" aria-expanded="false">
     <div class="tfl-deque-tree-branch" aria-hidden="true"></div>
     <span class="tfl-deque-tree-label">wartość rodzica</span>
     <ul role="group">
