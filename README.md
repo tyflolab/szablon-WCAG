@@ -105,7 +105,7 @@ Hiperłącza należy oznaczać poprzez `a href`. Przykład <a href="http://swon.
 
 ## Wzory matematyczne
 
-Wzory matematyczne opisujemy za pomocą LaTeX zamykając je w podwójnych dolarach $$ $$ dla wzoru w nowej linii, zamknięcie w znacznikach `\( \)` dla wzoru w tej samej linii. 
+Wzory matematyczne opisujemy za pomocą LaTeX zamykając je w podwójnych dolarach `$$ $$` dla wzoru w nowej linii, zamknięcie w znacznikach `\( \)` dla wzoru w tej samej linii. 
 $$
 \partial K(x)=\left\{\gamma \in \mathcal{R}^{n}: K(y) \geqslant K(x)+\gamma^{T}(y-x), \forall y \in \mathcal{R}^{n}\right\}, x \in \mathcal{X}
 $$
@@ -128,9 +128,9 @@ Zastosowana konfiguracja biblioteki JavaScript MathJax może generować problemy
 
 ## Kod źródłowy
 
-Zapisując kod źródłowy należy użyć znaczników pre oraz code z odpowiednią klasą                                biblioteki highlight.js [Zobacz wykaz wspieranych języków i klas.](https://github.com/highlightjs/highlight.js/blob/master/SUPPORTED_LANGUAGES.md)
+Zapisując kod źródłowy należy użyć znaczników pre oraz code z odpowiednią klasą biblioteki highlight.js [Zobacz wykaz wspieranych języków i klas.](https://github.com/highlightjs/highlight.js/blob/master/SUPPORTED_LANGUAGES.md)
 
-Zapisując kod źródłowy z języku HTML należy zamienić znak < oraz > na `&lt;` oraz `&gt;`. Można posłużyć się do tego automatycznym  narzędziem, np. [HTML Encoder](https://www.opinionatedgeek.com/codecs/htmlencoder).
+Zapisując kod źródłowy z języku HTML należy zamienić znak < oraz > na `&lt;` oraz `&gt;`. Można posłużyć się do tego automatycznym narzędziem, np. [HTML Encoder](https://www.opinionatedgeek.com/codecs/htmlencoder).
 
 ```javascript
 function detectStructure() {
@@ -190,7 +190,7 @@ Listę uporządkowaną tworzymy za pomocą znacznika `ol`, nieuporządkowane za 
 
 ## Dzielenie list, tabel między stronami
 
-Jeśli na jednej stronie znajduje się jeden element listy, a na kolejnej  następne elementy należy przenieść listę na jedną stronę.
+Jeśli na jednej stronie znajduje się jeden element listy, a na kolejnej następne elementy należy przenieść listę na jedną stronę.
 
 ```html
 <ul>
@@ -202,7 +202,7 @@ Jeśli na jednej stronie znajduje się jeden element listy, a na kolejnej  nast�
 </ul>
 ```
 
-Jeśli tabela znajduje się na wielu stronach należy przed miejscem  lokalizacji tabeli wstawić tyle znaczników podziału strony span z klasą  nextPage na ilu stronach znajduje się duża tabela i po znacznikach  dopisać słownie informację: Tabela nr XX znajduje się na 3 stronach  publikacji: 121, 122, 123.
+Jeśli tabela znajduje się na wielu stronach należy przed miejscem lokalizacji tabeli wstawić tyle znaczników podziału strony span z klasą nextPage na ilu stronach znajduje się duża tabela i po znacznikach dopisać słownie informację: Tabela nr XX znajduje się na 3 stronach  publikacji: 121, 122, 123.
 
 ```html
 <span class=”nextPage”></span>
@@ -315,13 +315,13 @@ Należy pamiętać o tworzeniu unikalnych id dla grafik, aby móc stworzyć list
 
 ## Dialogi
 
-Zapisując dialogi nie używamy list (ani punktowych, ani  numerowanych) chyba, że w oryginale dialog jest przedstawiony za pomocą  listy punktowej. W standardowym dialogu do zapisu używamy znacznika  `<p>` oraz `<br>`. Osoby mówiące w danym dialogu wyróżniamy za  pomocą `<strong>` (jeżeli w oryginale nie ma takiego wyróżnienia to  też go nie stosujemy).
+Zapisując dialogi nie używamy list (ani punktowych, ani  numerowanych) chyba, że w oryginale dialog jest przedstawiony za pomocą listy punktowej. W standardowym dialogu do zapisu używamy znacznika  `<p>` oraz `<br>`. Osoby mówiące w danym dialogu wyróżniamy za pomocą `<strong>` (jeżeli w oryginale nie ma takiego wyróżnienia to  też go nie stosujemy).
 
 Przykładowo:
 
 ```
 <p><strong>A</strong>: Hey, I'm really sorry I'm late. I came as fast as I could.</p>
-<p><strong>B</strong>:  It's OK. Nobody has really come  yet.</p>
+<p><strong>B</strong>: It's OK. Nobody has really come  yet.</p>
 <p><strong>A</strong>: Why? Where are  they?</p>
 <p><strong>B</strong>: Well, John  is shopping. He is getting some food.</p>
 ```
@@ -330,7 +330,7 @@ Przykładowo:
 
 1. **Ważne informacje (twierdzenia, definicje i inne merytorycznie ważne treści)**
 
-   W atrybucie `aria-level=" "` autor powinien wpisać właściwy poziom zgodny z hierarchią struktury nagłówków w swoim rozdziale np. `aria-level"2"`, `aria-level="5"` itd. W znaczniku `<p class="sr-only"`, należy umieścić informacje zgodnie z treścią książki, np. jeżeli ramka wyróżnia twierdzenie znajdujące się w rozdziale (nagłówek h2) to wtedy przykładowy fragment kodu może wyglądać następująco:
+   W atrybucie `aria-level=" "` autor powinien wpisać właściwy poziom zgodny z hierarchią struktury nagłówków w swoim rozdziale np. `aria-level"2"`, `aria-level="5"` itd. W znaczniku `<p class="sr-only"`, należy umieścić unikalne id identyczne z umieszczonym identyfikatorem w atrybucie `aria-labelledby=" "`. W znaczniku o klasie sr-only należy zamieścić również informacje zgodną z treścią książki, np. jeżeli ramka wyróżnia twierdzenie znajdujące się w rozdziale (nagłówek h2) to wtedy przykładowy fragment kodu może wyglądać następująco:
 
    ```html
    <div class="tfl-frame-highlight" role="region" aria-labelledby="region-heading">
@@ -381,9 +381,9 @@ Następnym krokiem jest zdefiniowanie korzenia grafu. Jeśli korzeń opisywanego
 </li>
 ```
 
-Jest on odpowiednikiem kodu definiującego liście dla takiego grafu, których sposób tworzenia przedstawiony zostanie w kolejnej części sposobu reprezentacji złożonych reprezentacji graficznych przy użyciu zagnieżdżonych list.  Dla powyższego kodu w atrybucie `aria-level=" "` oraz znaczniku `span` o klasie <strong>tfl-deque-tree-label</strong> autor powinien wpisać wartość wierzchołka opisywanego grafu. Operację tą wykonujemy również na przedstawionych w kolejnych etapach przykładach procesu tworzenia zagnieżdżonych list.
+Jest on odpowiednikiem kodu definiującego liście dla takiego grafu, których sposób tworzenia przedstawiony zostanie w kolejnej części sposobu reprezentacji złożonych reprezentacji graficznych przy użyciu zagnieżdżonych list. Dla powyższego kodu w atrybucie `aria-level=" "` oraz znaczniku `span` o klasie <strong>tfl-deque-tree-label</strong> autor powinien wpisać wartość wierzchołka opisywanego grafu. Operację tą wykonujemy również na przedstawionych w kolejnych etapach przykładach procesu tworzenia zagnieżdżonych list.
 
-W procesie tworzenia korzenia grafu może wystąpić przypadek, w którym element będący jego korzeniem będzie rodzicem kolejnych elementów opisywanego grafu. W takim wypadku należy pamiętać, że elementy będące dziećmi opisywanego korzenia należy umieścić w znaczniku `ul` z wartością **group** atrybutu role znacznika. Dodatkowo należy nadać znacznikowi div opisu korzenia wartość reprezentującą wartość wierzchołka klasy o nazwie **tfl-deque-tree-branch**.
+W procesie tworzenia korzenia grafu może wystąpić przypadek, w którym element będący jego korzeniem będzie rodzicem kolejnych elementów opisywanego grafu. W takim wypadku należy pamiętać, że elementy będące dziećmi opisywanego korzenia należy umieścić w znaczniku `ul` z wartością **group** atrybutu role znacznika. Dodatkowo należy nadać znacznikowi `div` opisu korzenia wartość reprezentującą wartość wierzchołka klasy o nazwie **tfl-deque-tree-branch**.
 
 ```html
 <li role="treeitem" aria-label="wartość korzenia grafu" data-tree-root="tfl-deque-tree-root" tabindex="-1" aria-expanded="false">
