@@ -634,8 +634,11 @@
                         nadania dodatkowej semantyki redagowanemu opisowi. Mogą to być informacje w postaci grafów,
                         różnego rodzaju drzew, schematów i zależności
                         pomiędzy nimi, mapy myśli, itd.</p>
-                    <p>Aby zacząć tworzyć taką postać zagnieżdżonej listy należy rozpocząć jej tworzenie od umieszczenia
-                        elementu korzenia diagramu wewnątrz znacznika ul z wartością tree atrybutu role znacznika:</p>
+                    <p>Aby zacząć tworzyć taką postać zagnieżdżonej listy należy rozpocząć jej tworzenie od umieszczenia elementu korzenia
+                    diagramu wewnątrz znacznika ul z wartością <strong>tree</strong> atrybutu role znacznika. Jeśli w naszej publikacji zdecydujemy się
+                    na zastosowanie większej ilości tego typu listy to należy pamiętać o zmianie id dla każdej kolejnej listy w tym
+                    elemencie <code>&lt;div id="tfl-deque-tree-root"&gt;</code> oraz każdym atrybucie <strong>data-tree-root</strong>, w którym należy wprowadzić
+                        wspomniany identyfikator:</p>
                     <figure id="code20">
                         <pre><code>&lt;div class="tfl-deque-tree-no-select tfl-deque-tree tfl-left"&gt;
     &lt;div id="tfl-deque-tree-root"&gt;
@@ -665,12 +668,8 @@
                     <p>W procesie tworzenia korzenia grafu może wystąpić przypadek, w którym element będący jego
                         korzeniem będzie rodzicem kolejnych elementów opisywanego grafu. W takim wypadku należy
                         pamiętać, że elementy będące dziećmi opisywanego korzenia
-                        należy umieścić w znaczniku ul z wartością group atrybutu role znacznika. Dodatkowo należy nadać
-                        znacznikowi div opisu korzenia wartość reprezentującą wartość wierzchołka klasy o nazwie
-                        <strong>tfl-deque-tree-branch</strong> oraz każdemu atrybutowi <strong>data-tree-root</strong>
-                        znaczników reprezentujących kolejne elementy implementacji grafu unikalny identyfikator listy
-                        zapisany w początkowej fazie tworzenia grafu w znaczniku
-                        <code>&lt;div id="tfl-deque-tree-root"&gt;&lt;/div&gt;</code> dla zaprezentowanego grafu.
+                        należy umieścić w znaczniku ul z wartością group atrybutu role znacznika. Dodatkowo należy nadać znacznikowi div opisu korzenia wartość reprezentującą wartość wierzchołka klasy o nazwie
+                        <strong>tfl-deque-tree-branch</strong>.
                     </p>
                     <figure id="code22">
                         <pre><code>&lt;li role="treeitem" aria-label="wartość korzenia grafu" data-tree-root="tfl-deque-tree-root" tabindex="-1" aria-expanded="false"&gt;
