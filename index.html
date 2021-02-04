@@ -42,11 +42,13 @@
                         </nav>
                     </div>
                 </div>
-                <nav class="row fixed-bottom col-md-3">
+                <nav class="row fixed-bottom col-sm-4 col-md-4 col-lg-3 pb-2">
                     <div class="tfl-page-navbar">
                         <form id="goToPageForm" action="#" onsubmit="ctrl.navigateToPage()" class="form-inline">
                             <div class="form-row">
-                                <button id="prevChaptBtn" type="button" aria-label="Poprzedni rozdział" class="btn btn-dark btn-sm" data-toggle="tooltip" data-placement="top" title="Poprzedni rozdział" onclick="ctrl.navigateToPrevChapter()">
+                                <button id="prevChaptBtn" type="button" aria-label="Poprzedni rozdział"
+                                    class="btn btn-dark btn-sm" data-toggle="tooltip" data-placement="top"
+                                    title="Poprzedni rozdział" onclick="ctrl.navigateToPrevChapter()">
                                     <svg class="bi bi-chevron-bar-left" width="1em" height="1em" viewBox="0 0 16 16"
                                         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd"
@@ -54,7 +56,9 @@
                                             clip-rule="evenodd" />
                                     </svg>
                                 </button>
-                                <button id="prevPageBtn" type="button" aria-label="Poprzednia strona" class="btn btn-dark btn-sm" data-toggle="tooltip" data-placement="top" title="Poprzednia strona" onclick="ctrl.navigateToPrevPage()">
+                                <button id="prevPageBtn" type="button" aria-label="Poprzednia strona"
+                                    class="btn btn-dark btn-sm" data-toggle="tooltip" data-placement="top"
+                                    title="Poprzednia strona" onclick="ctrl.navigateToPrevPage()">
                                     <svg class="bi bi-chevron-left" width="1em" height="1em" viewBox="0 0 16 16"
                                         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd"
@@ -65,9 +69,12 @@
                                 <div>
                                     <label for="pageInput" class="sr-only">Wprowadź numer strony. Zatwierdź klawiszem
                                         enter</label>
-                                    <input type="number" class="form-control form-control-sm" id="pageInput" name="pageInput">
+                                    <input type="number" class="form-control form-control-sm" id="pageInput"
+                                        name="pageInput">
                                 </div>
-                                <button id="nextPageBtn" type="button" aria-label="Następna strona" class="btn btn-dark btn-sm" data-toggle="tooltip" data-placement="top" title="Następna strona" onclick="ctrl.navigateToNextPage()">
+                                <button id="nextPageBtn" type="button" aria-label="Następna strona"
+                                    class="btn btn-dark btn-sm" data-toggle="tooltip" data-placement="top"
+                                    title="Następna strona" onclick="ctrl.navigateToNextPage()">
                                     <svg class="bi bi-chevron-right" width="1em" height="1em" viewBox="0 0 16 16"
                                         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd"
@@ -75,7 +82,9 @@
                                             clip-rule="evenodd" />
                                     </svg>
                                 </button>
-                                <button id="nextChaptBtn" type="button" aria-label="Następny rozdział" class="btn btn-dark btn-sm" data-toggle="tooltip" data-placement="top" title="Następny rozdział" onclick="ctrl.navigateToNextChapter()">
+                                <button id="nextChaptBtn" type="button" aria-label="Następny rozdział"
+                                    class="btn btn-dark btn-sm" data-toggle="tooltip" data-placement="top"
+                                    title="Następny rozdział" onclick="ctrl.navigateToNextChapter()">
                                     <svg class="bi bi-chevron-bar-right" width="1em" height="1em" viewBox="0 0 16 16"
                                         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd"
@@ -91,7 +100,9 @@
             <div class="col-md-9">
                 <main>
                     <h2>Informacje ogólne</h2>
-                    <p>Niniejsza specyfikacja dotyczy adaptacji publikacji, dokumentów tekstowych do dostępnego formatu HTML zgodnie z WCAG 2.1. na poziomie AA na szablonie przygotowanym w Laboratorium Tyfloinformatycznym Politechniki Wrocławskiej. Tworząc
+                    <p>Niniejsza specyfikacja dotyczy adaptacji publikacji, dokumentów tekstowych do dostępnego formatu
+                        HTML zgodnie z WCAG 2.1. na poziomie AA na szablonie przygotowanym w Laboratorium
+                        Tyfloinformatycznym Politechniki Wrocławskiej. Tworząc
                         na szablonie, zgodnie z wytycznymy nowy dokument otrzymamy wersję dostępną cyfrowo dla każdego.
                     </p>
                     <h3>Metadane</h3>
@@ -105,14 +116,17 @@
                     <p>W sekcji header dokumentu HTML należy uzupełnić tytuł oznaczony nagłówkiem pierwszego stopnia.
                     </p>
                     <figure id="code1">
-                        <figcaption>Przykład kodu w elemencie header dokumentu</figcaption>
+                        <figcaption> kodu w elemencie header dokumentu</figcaption>
                         <pre><code class="lang-html">&lt;header&gt;
-&lt;h1&gt;Specyfikacja adaptacji HTML&lt;/h1&gt;
+    &lt;h1&gt;Specyfikacja adaptacji HTML&lt;/h1&gt;
 &lt;/header&gt;</code></pre>
                     </figure>
                     <h3>Nagłówki</h3>
-                    <p>Ważne jest oznaczanie nagłówków w dokumencie - przez nie zostanie stworzony spis treści za pomocą skryptu .js. Nagłówek poziomu pierwszego zwyczajowo przypisywany jest do tytułu publikacji, rozdziały rozpoczynamy numerować od nagłówka
-                        poziomu drugiego. Należy zachować hierarchię nagłówków. Nie należy używać nagłówka poziomu trzeciego jeśli wcześniej w dokumencie nie został użyty nagłówek poziomu drugiego.</p>
+                    <p>Ważne jest oznaczanie nagłówków w dokumencie - przez nie zostanie stworzony spis treści za pomocą
+                        skryptu .js. Nagłówek poziomu pierwszego zwyczajowo przypisywany jest do tytułu publikacji,
+                        rozdziały rozpoczynamy numerować od nagłówka
+                        poziomu drugiego. Należy zachować hierarchię nagłówków. Nie należy używać nagłówka poziomu
+                        trzeciego jeśli wcześniej w dokumencie nie został użyty nagłówek poziomu drugiego.</p>
                     <p>Przykład poprawnie użytej struktury nagłówków:</p>
                     <ol class="none">
                         <li>Tytuł dokumentu (Nagłówek 1)
@@ -133,12 +147,14 @@
                     </ol>
 
                     <h3>Tabele</h3>
-                    <p>Tabele możemy utworzyć za pomocą generatora tabel <a href="https://www.tablesgenerator.com/html_tables">Przejdź do generatora tabel</a>. Tabele powinny posiadać wiersz nagłówkowy, tytuł, unikalny identyfikator id oraz jeśli jest to
+                    <p>Tabele możemy utworzyć za pomocą generatora tabel <a
+                            href="https://www.tablesgenerator.com/html_tables">Przejdź do generatora tabel</a>. Tabele
+                        powinny posiadać wiersz nagłówkowy, tytuł, unikalny identyfikator id oraz jeśli jest to
                         skomplikowana tabela należy rozwinąć jej opis za pomocą znacznika details.</p>
-                    <figure id="code1">
+                    <figure id="code2">
                         <figcaption class="tfl-center">Przykład kodu dla tabeli</figcaption>
-                        <pre><code class="lang-html">&lt;div class="table-responsive-md"&gt; 
-&lt;table id="tab1" class="table table-bordered table-striped"&gt; 
+                        <pre><code class="lang-html">&lt;div class="table-responsive-md"&gt;
+    &lt;table id="tab1" class="table table-bordered table-striped"&gt;
 	&lt;caption&gt;Tytuł tabeli&lt;/caption&gt;
 		&lt;thead&gt;
 			&lt;tr&gt;
@@ -159,7 +175,7 @@
 				&lt;td&gt;Dane 1&lt;/td&gt;
 			&lt;/tr&gt;
 		&lt;/tbody&gt;
-&lt;/table&gt;
+    &lt;/table&gt;
 &lt;/div&gt;
 &lt;details id="table"&gt;
   &lt;summary&gt;Szczegółowy opis tabeli&lt;/summary&gt;
@@ -168,29 +184,30 @@
 &lt;/details&gt;</code></pre>
                     </figure>
 
-
-                    <table id="tab1" class="table table-bordered table-striped">
-                        <caption>Tytuł tabeli</caption>
-                        <thead>
-                            <tr>
-                                <th>Wiersz nagłówkowy</th>
-                                <th>Wiersz nagłówkowy</th>
-                                <th>Wiersz nagłówkowy</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Dane</td>
-                                <td>Dane</td>
-                                <td>Dane</td>
-                            </tr>
-                            <tr>
-                                <td>Dane 1</td>
-                                <td>Dane 1</td>
-                                <td>Dane 1</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="table-responsive-md">
+                        <table id="tab1" class="table table-bordered table-striped">
+                            <caption>Tytuł tabeli</caption>
+                            <thead>
+                                <tr>
+                                    <th>Wiersz nagłówkowy</th>
+                                    <th>Wiersz nagłówkowy</th>
+                                    <th>Wiersz nagłówkowy</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Dane</td>
+                                    <td>Dane</td>
+                                    <td>Dane</td>
+                                </tr>
+                                <tr>
+                                    <td>Dane 1</td>
+                                    <td>Dane 1</td>
+                                    <td>Dane 1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <details id="table">
                         <summary>Szczegółowy opis tabeli</summary>
                         <p>Tutaj umieszczamy szczegółowy opis tabeli</p>
@@ -198,9 +215,12 @@
                     </details>
 
                     <h3>Grafiki</h3>
-                    <p>Każda grafika przedstawiająca informacje powinna posiadać opis alternatywny oraz tytuł. Jeśli jest skomplikowana i przedstawia dużo treści oprócz krótkiego opisu alternatywnego należy rozwinąć opis za pomocą znacznika details. Każda
-                        grafika powinna posiadać unikalny identyfikator id. Opisu alternatywnego nie wymagają jedynie grafiki dekoracyjne.</p>
-                    <figure id="code2">
+                    <p>Każda grafika przedstawiająca informacje powinna posiadać opis alternatywny oraz tytuł. Jeśli
+                        jest skomplikowana i przedstawia dużo treści oprócz krótkiego opisu alternatywnego należy
+                        rozwinąć opis za pomocą znacznika details. Każda
+                        grafika powinna posiadać unikalny identyfikator id. Opisu alternatywnego nie wymagają jedynie
+                        grafiki dekoracyjne.</p>
+                    <figure id="code3">
                         <figcaption class="tfl-center">Przykład kodu dla grafiki</figcaption>
                         <pre><code class="lang-html">&lt;figure id="img1" class="tfl-center"&gt;
     &lt;img src="images/img1.jpg" class="img-fluid"
@@ -214,11 +234,11 @@
          &lt;/p&gt;
       &lt;/details&gt;
     &lt;/figcaption&gt;
-  &lt;/figure&gt;
-  </code></pre>
+&lt;/figure&gt;</code></pre>
                     </figure>
                     <figure id="img1" class="tfl-center">
-                        <img src="images/img1.jpg" class="img-fluid" alt="Tutaj umieszczamy opis alternatywny do grafiki" />
+                        <img src="images/img1.jpg" class="img-fluid"
+                            alt="Tutaj umieszczamy opis alternatywny do grafiki" />
                         <figcaption>
                             Tutaj umieszczamy wyświetlany tytuł grafiki.
                             <details>
@@ -231,34 +251,40 @@
                     </figure>
 
                     <h3>Numery stron</h3>
-                    Podział na strony stosujemy podczas adaptacji publikacji/dokumentu, jeśli wymaga zachowania oryginalnej numeracji stron. Strony oddzielamy za pomocą separatora.
-                    <figure id="code3">
+                    Podział na strony stosujemy podczas adaptacji publikacji/dokumentu, jeśli wymaga zachowania
+                    oryginalnej numeracji stron. Strony oddzielamy za pomocą separatora.
+                    <figure id="code4">
                         <figcaption class="tfl-center">Kod dla numeracji stron</figcaption>
                         <pre><code class="lang-html">&lt;span class="nextPage"&gt;&lt;/span&gt;</code></pre>
                     </figure>
-                    <p>Nie dodajemy ręcznie numerów stron - za pomocą skryptu .js zostaną one umieszczone automatycznie. Pierwsza numerowana strona w publikacji to pierwszy znacznik separatora na górze strony. Gdy w publikacji występują puste strony w adaptacji
-                        należy taką informację zawrzeć używając zdania: Pusta strona po numerze strony - znaczniku span z klasą nextPage.</p>
+                    <p>Nie dodajemy ręcznie numerów stron - za pomocą skryptu .js zostaną one umieszczone automatycznie.
+                        Pierwsza numerowana strona w publikacji to pierwszy znacznik separatora na górze strony. Gdy w
+                        publikacji występują puste strony w adaptacji
+                        należy taką informację zawrzeć używając zdania: Pusta strona po numerze strony - znaczniku span
+                        z klasą nextPage.</p>
 
                     <h3>Hiperłącza</h3>
 
                     <p>Hiperłącza należy oznaczać poprzez a href. Przykład <a href="http://swon.pwr.edu.pl">Czytaj
                             więcej na stronie Sekcji ds. Wsparcia Osób z Niepełnosprawnością</a></p>
-                    <figure id="code4">
+                    <figure id="code5">
                         <figcaption class="tfl-center">Kod dla oznaczenia hiperłącza</figcaption>
                         <pre><code class="lang-html">&lt;a href="http://swon.pwr.edu.pl"&gt;Czytaj więcej na stronie Sekcji ds. Wsparcia Osób z Niepełnosprawnością&lt;/a&gt;</code></pre>
                     </figure>
 
                     <h3>Wzory matematyczne</h3>
-                    <p>Wzory matematyczne opisujemy za pomocą LaTeX zamykając je w podwójnych dolarach dla wzoru w nowej linii,
+                    <p>Wzory matematyczne opisujemy za pomocą LaTeX zamykając je w podwójnych dolarach dla wzoru w nowej
+                        linii,
                         <code>$$ $$</code> dla wzoru w tej samej linii zamknięcie w znacznikach
-                        <code>\( \)</code>. $$ \partial K(x)=\left\{\gamma \in \mathcal{R}^{n}: K(y) \geqslant K(x)+\gamma^{T}(y-x), \forall y \in \mathcal{R}^{n}\right\}, x \in \mathcal{X}$$
+                        <code>\( \)</code>. $$ \partial K(x)=\left\{\gamma \in \mathcal{R}^{n}: K(y) \geqslant
+                        K(x)+\gamma^{T}(y-x), \forall y \in \mathcal{R}^{n}\right\}, x \in \mathcal{X}$$
                     </p>
-                    <figure id="code5">
+                    <figure id="code6">
                         <figcaption class="tfl-center">Kod LaTeX dla wzoru w nowej linii</figcaption>
                         <pre><code class="lang-tex">$$ \partial K(x)=\left\{\gamma \in \mathcal{R}^{n}: K(y) \geqslant K(x)+\gamma^{T}(y-x), \forall y \in \mathcal{R}^{n}\right\}, x \in \mathcal{X}$$.</code></pre>
                     </figure>
                     <p>Przykład wzoru w zdaniu \(M_{j}=\left\{: y_{i}-a_{i j} &lt; 0\right\}\)</p>
-                    <figure id="code6">
+                    <figure id="code7">
                         <figcaption class="tfl-center">Kod LaTeX dla wzoru umieszczonego w ciągu zdania
                         </figcaption>
                         <pre><code class="lang-tex">Przykład wzoru w zdaniu \(M_{j}=\left\{: y_{i}-a_{i j} &lt; 0\right\}\)</code></pre>
@@ -266,45 +292,49 @@
                     <p>Nie zostawiamy tekstów w indeksie górnym np. liczebniki porządkowe angielskie 6
                         <sup>th</sup> zapisujemy jako 6th.
                     </p>
-                    <p>Zastosowana konfiguracja biblioteki JavaScript MathJax może generować problemy z rozpoznaniem niektórych elementów składni dla zapisu równań matematycznych za pomocą LaTeX. Dlatego jeśli w składni zapisu równania pojawi się m.in. element
-                        pogrubiający jej składowe (\boldsymbol) należy zamienić go na element o podobnym znaczeniu i wyglądzie (\mathbf).
+                    <p>Zastosowana konfiguracja biblioteki JavaScript MathJax może generować problemy z rozpoznaniem
+                        niektórych elementów składni dla zapisu równań matematycznych za pomocą LaTeX. Dlatego jeśli w
+                        składni zapisu równania pojawi się m.in. element
+                        pogrubiający jej składowe (\boldsymbol) należy zamienić go na element o podobnym znaczeniu i
+                        wyglądzie (\mathbf).
                     </p>
 
                     <h3>Kod źródłowy</h3>
-                    <p>Zapisując kod źródłowy należy użyć znaczników pre oraz code z odpowiednią klasą biblioteki highlight.js <a href="https://github.com/highlightjs/highlight.js/blob/master/SUPPORTED_LANGUAGES.md">Zobacz
+                    <p>Zapisując kod źródłowy należy użyć znaczników pre oraz code z odpowiednią klasą biblioteki
+                        highlight.js <a
+                            href="https://github.com/highlightjs/highlight.js/blob/master/SUPPORTED_LANGUAGES.md">Zobacz
                             wykaz wspieranych języków i klas.</a></p>
                     <p>Zapisując kod źródłowy z języku HTML należy zamienić znak
-                        < oraz> na & lt; oraz & gt;. Można posłużyć się do tego automatycznym narzędziem, np. <a href="https://www.opinionatedgeek.com/codecs/htmlencoder">HTML Encoder</a>.
+                        &lt; oraz &gt; na & lt; oraz & gt;. Można posłużyć się do tego automatycznym narzędziem, np. <a
+                            href="https://www.opinionatedgeek.com/codecs/htmlencoder">HTML Encoder</a>.
                     </p>
 
-                    <figure id="code7">
+                    <figure id="code8">
                         <figcaption class="tfl-center">Przykład kodu w języku javascript</figcaption>
                         <pre>
-    <code class="lang-javascript">
-        function detectStructure() {
-            let parent = model.documentRoot;
-            $(":header:not(h1)").each(function () {
-                let headerLevel = this.nodeName.substring(1);
-                while (headerLevel &lt;= parent.level && parent.parent) {
-                    parent = parent.parent;
-                }
+    <code class="lang-javascript">function detectStructure() {
+    let parent = model.documentRoot;
+    $(":header:not(h1)").each(function () {
+        let headerLevel = this.nodeName.substring(1);
+        while (headerLevel &lt;= parent.level && parent.parent) {
+            parent = parent.parent;
+        }
 
-                if (headerLevel - parent.level === 1) {
-                    parent = _createNewNodeAndAddToParent(this, parent);
-                } else if (headerLevel - parent.level === 0) {
-                    parent = _createNewNodeAndAddToParent(this, parent.parent);
-                } else {
-                    console.warn('Not consistent document structure');
-                }
-            });
-        };</code></pre>
+        if (headerLevel - parent.level === 1) {
+            parent = _createNewNodeAndAddToParent(this, parent);
+        } else if (headerLevel - parent.level === 0) {
+            parent = _createNewNodeAndAddToParent(this, parent.parent);
+        } else {
+            console.warn('Not consistent document structure');
+        }
+    });
+};</code></pre>
                     </figure>
 
-                    <figure id="code8">
+                    <figure id="code9">
                         <figcaption class="tfl-center">Zapis kodu HTML z przykładem w języku javascript
                         </figcaption>
-                        <pre><code class="lang-html">
-    &lt;figure id="code7"&gt;
+                        <pre><code class="lang-html">&lt;figure id="code7"&gt;
     &lt;figcaption class="tfl-center"&gt;Przykład zapisu kodu &lt;/figcaption&gt;
     &lt;pre&gt;&lt;code class="lang-javascript"&gt;
     function detectStructure() {
@@ -324,32 +354,42 @@
             }
         });
     };
-&lt;/code&gt;&lt;/pre&gt;
+    &lt;/code&gt;&lt;/pre&gt;
 &lt;/figure&gt;</code></pre>
                     </figure>
                     <h3>Oznaczenie języka</h3>
-                    <p>Język fragmentu tekstu należy oznaczyć poprzez umieszczenie wybranego fragmentu w znaczniku span oraz wybranie skrótu odpowiedniego języka np. en, pl, fr.</p>
-                    <figure id="code9">
+                    <p>Język fragmentu tekstu należy oznaczyć poprzez umieszczenie wybranego fragmentu w znaczniku span
+                        oraz wybranie skrótu odpowiedniego języka np. en, pl, fr.</p>
+                    <figure id="code10">
                         <figcaption>Przykład oznaczenia fragmentu tekstu w języku innym niż język dokumentu
                         </figcaption>
-                        <pre><code class="lang=html">&lt;span lang="en"&gt;This text is in other language than the rest of the document&lt;/span&gt;
+                        <pre><code class="lang-html">&lt;span lang="en"&gt;This text is in other language than the rest of the document&lt;/span&gt;
 </code></pre>
                     </figure>
                     <ul>
-                        <li>Imiona i nazwiska w obcych językach oznaczamy jako język polski, a także nazwy własne (nazwy uczelni, nazwy miast, rzek).</li>
-                        <li>Odpowiednim językiem oznaczamy tytuły publikacji, występujące np. w bibliografii, w przypisach.
+                        <li>Imiona i nazwiska w obcych językach oznaczamy jako język polski, a także nazwy własne (nazwy
+                            uczelni, nazwy miast, rzek).</li>
+                        <li>Odpowiednim językiem oznaczamy tytuły publikacji, występujące np. w bibliografii, w
+                            przypisach.
                         </li>
                         <li>Słowa takie jak „Facebook”, „Google”, „mail” itp. zostawiamy jako język polski.</li>
-                        <li>Słowa greckie, które są zapisane alfabetem łacińskim zostawiamy jako język polski, zaś te napisane alfabetem greckim oznaczamy jako język grecki. Podobnie z językiem rosyjskim, arabskim itp.</li>
+                        <li>Słowa greckie, które są zapisane alfabetem łacińskim zostawiamy jako język polski, zaś te
+                            napisane alfabetem greckim oznaczamy jako język grecki. Podobnie z językiem rosyjskim,
+                            arabskim itp.</li>
                     </ul>
                     <h3>Cytaty</h3>
                     <p>Cytaty w tej samej linii oznaczamy tagiem q, cytat długi w nowym wierszu za pomocą blockquote.
                     </p>
-                    <p>Jeżeli cytat zaczyna się na jednej stronie, a kończy na drugiej, przenosimy jego całość na stronę na której się zaczyna (o ile jego zakończenie nie zajmuje więcej niż około 25% strony). Jeżeli zajmuje więcej należy zakończyć zdanie
-                        z cytatu zaczynające się na poprzedniej stronie, wpisujemy znacznik podziału strony (span z klasą nextPage) i kończymy cytat.</p>
+                    <p>Jeżeli cytat zaczyna się na jednej stronie, a kończy na drugiej, przenosimy jego całość na stronę
+                        na której się zaczyna (o ile jego zakończenie nie zajmuje więcej niż około 25% strony). Jeżeli
+                        zajmuje więcej należy zakończyć zdanie
+                        z cytatu zaczynające się na poprzedniej stronie, wpisujemy znacznik podziału strony (span z
+                        klasą nextPage) i kończymy cytat.</p>
                     <h3>Lista, lista zagnieżdżona</h3>
-                    <p>Listę uporządkowaną tworzymy za pomocą znacznika ol, nieuporządkowane za pomocą znacznika ul. Listy HTML można dowolnie zagnieżdżać, rozpoczynać od wybranego numeru lub nadać jej klasę none i samemu dowolnie numerować. </p>
-                    <figure id="code10">
+                    <p>Listę uporządkowaną tworzymy za pomocą znacznika ol, nieuporządkowane za pomocą znacznika ul.
+                        Listy HTML można dowolnie zagnieżdżać, rozpoczynać od wybranego numeru lub nadać jej klasę none
+                        i samemu dowolnie numerować. </p>
+                    <figure id="code11">
                         <figcaption>Przykład numerowanej listy zagnieżdżonej</figcaption>
                         <pre><code class="lang-html">&lt;ol&gt;
     &lt;li&gt;Pierwszy element listy&lt;/li&gt;
@@ -375,8 +415,9 @@
                     </ol>
 
                     <h3>Dzielenie list, tabel między stronami</h3>
-                    <p>Jeśli na jednej stronie znajduje się jeden element listy, a na kolejnej następne elementy należy przenieść listę na jedną stronę.</p>
-                    <figure id="code11a">
+                    <p>Jeśli na jednej stronie znajduje się jeden element listy, a na kolejnej następne elementy należy
+                        przenieść listę na jedną stronę.</p>
+                    <figure id="code12">
                         <figcaption class="tfl-center">Przykład kodu HTML dla dzielenia listy między stronami.
                         </figcaption>
                         <pre><code class="lang-html">&lt;ul&gt;
@@ -388,50 +429,58 @@
 &lt;/ul&gt;</code></pre>
                     </figure>
 
-                    <p>Jeśli tabela znajduje się na wielu stronach należy przed miejscem lokalizacji tabeli wstawić tyle znaczników podziału strony span z klasą nextPage na ilu stronach znajduje się duża tabela i po znacznikach dopisać słownie informację:
+                    <p>Jeśli tabela znajduje się na wielu stronach należy przed miejscem lokalizacji tabeli wstawić tyle
+                        znaczników podziału strony span z klasą nextPage na ilu stronach znajduje się duża tabela i po
+                        znacznikach dopisać słownie informację:
                         Tabela nr XX znajduje się na 3 stronach publikacji: 121, 122, 123.</p>
-                    <figure id="code11b">
+                    <figure id="code13">
                         <figcaption class="tfl-center">Przykład kodu HTML dla dzielenia tabeli między stronami.
-                            </figacption>
-                            <pre><code class="lang-html">&lt;span class=”nextPage”&gt;&lt;/span&gt;
+                        </figcaption>
+                        <pre><code class="lang-html">&lt;span class=”nextPage”&gt;&lt;/span&gt;
 &lt;span class=”nextPage”&gt;&lt;/span&gt;
 &lt;span class=”nextPage”&gt;&lt;/span&gt;
 &lt;p&gt;Tabela nr XX znajduje się na 3 stronach publikacji: 121, 122, 123.&lt;/p&gt;
 &lt;table&gt;&lt;/table&gt;</code></pre>
                     </figure>
                     <h3>Spis treści</h3>
-                    <p>Spis treści tworzony jest skryptem .js z nagłówków - należy zachować odpowiednią hierarchię nagłówków, aby został stworzony.</p>
+                    <p>Spis treści tworzony jest skryptem .js z nagłówków - należy zachować odpowiednią hierarchię
+                        nagłówków, aby został stworzony.</p>
                     <h3>Przypisy</h3>
-                    <p>Przypisy tworzymy poprzez linki, którym nadajemy unikalne id, tak aby można było zrobić odsyłacze do treści przypisu i z powrotem do treści głównej. </p>
-                    <figure id="code11">
+                    <p>Przypisy tworzymy poprzez linki, którym nadajemy unikalne id, tak aby można było zrobić odsyłacze
+                        do treści przypisu i z powrotem do treści głównej. </p>
+                    <figure id="code14">
                         <figcaption class="tfl-center">Przykład kodu dla przypisów</figcaption>
                         <pre><code class="lang-html">&lt;a href="#1" id="ref1" class="footnote" aria-describedby="goTo"&gt;[1]&lt;/a&gt;
-    &lt;h2 id="footnote-label"&gt;Przypisy&lt;/h2&gt;
-    &lt;div class="tfl-footer"&gt;
-        &lt;ol class="none"&gt;
-              &lt;li id="1"&gt;1. Rozwinięcie przypisu
-                &lt;a href="#ref1"&gt;&lt;img src=https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/box-arrow-in-up-left.svg alt="Wróć do treści"&gt;&lt;/a&gt;
-            &lt;/li&gt;
-        &lt;/ol&gt;
-    &lt;/div&gt;</code></pre>
+&lt;h2 id="footnote-label"&gt;Przypisy&lt;/h2&gt;
+&lt;div class="tfl-footer"&gt;
+    &lt;ol class="none"&gt;
+        &lt;li id="1"&gt;1. Rozwinięcie przypisu
+            &lt;a href="#ref1"&gt;&lt;img src=https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/box-arrow-in-up-left.svg alt="Wróć do treści"&gt;&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/div&gt;</code></pre>
                     </figure>
-                    <p>Jeśli w publikacji występują przypisy harwardzkie również należy nadać im unikalne id, rozróżnialne od przypisów dolnych. </p>
-                    <figure id="code12">
+                    <p>Jeśli w publikacji występują przypisy harwardzkie również należy nadać im unikalne id,
+                        rozróżnialne od przypisów dolnych. </p>
+                    <figure id="code15">
                         <figcaption>Przykład kodu dla przyp[isów harwardzkich</figcaption>
                         <pre><code class="lang-html">&lt;a href="#h1" id="refh1" class="footnote-harvard" aria-describedby="goTo"&gt;[15]&lt;/a&gt;
-    &lt;h2 id="footnote-label"&gt;Przypisy harwardzkie&lt;/h2&gt;
-    &lt;div class="tfl-footer"&gt;
-        &lt;ol class="none"&gt;
-              &lt;li id="h1"&gt;15. Rozwinięcie przypisu
-                &lt;a href="#refh1"&gt;&lt;img src=https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/box-arrow-in-up-left.svg alt="Wróć do treści"&gt;&lt;/a&gt;
-            &lt;/li&gt;
-        &lt;/ol&gt;
-    &lt;/div&gt;</code></pre>
+&lt;h2 id="footnote-label"&gt;Przypisy harwardzkie&lt;/h2&gt;
+&lt;div class="tfl-footer"&gt;
+    &lt;ol class="none"&gt;
+        &lt;li id="h1"&gt;15. Rozwinięcie przypisu
+            &lt;a href="#refh1"&gt;&lt;img src=https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/box-arrow-in-up-left.svg alt="Wróć do treści"&gt;&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/div&gt;</code></pre>
                     </figure>
 
                     <h3>Skróty</h3>
-                    <p>Skróty występujące w tekście należy umieścić w znacznikach abbr, a rozwinięcie skrótu zapisać w atrybucie title. Dodatkowo na końcu publikacji należy umieścić wykaz skrótów jako nagłówek poziomu 2.</p>
-                    <p>Wykaz skrótów może być umieszczony np. przy pomocy listy punktowej. Należy przyjąć jeden wzór i stosować go do wszystkich publikacji.</p>
+                    <p>Skróty występujące w tekście należy umieścić w znacznikach abbr, a rozwinięcie skrótu zapisać w
+                        atrybucie title. Dodatkowo na końcu publikacji należy umieścić wykaz skrótów jako nagłówek
+                        poziomu 2.</p>
+                    <p>Wykaz skrótów może być umieszczony np. przy pomocy listy punktowej. Należy przyjąć jeden wzór i
+                        stosować go do wszystkich publikacji.</p>
                     <p>Skróty których nie rozwijamy:</p>
                     <ul>
                         <li>itp.</li>
@@ -442,64 +491,77 @@
                         <li>s. (jeżeli występuje w przypisach, w treści można rozwinąć)</li>
                         <li>tzn.</li>
                     </ul>
-                    <figure id="code13">
+                    <figure id="code16">
                         <figcaption>Przykład listy skrótów</figcaption>
                         <pre><code class="lang-html">&lt;h2&gt;Spis skrótów&lt;/h2&gt;
-    &lt;ol class="none"&gt;
-        &lt;li&gt;&lt;abbr title="rok"&gt;r.&lt;/abbr&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;abbr title="kilobajt"&gt;kB&lt;/abbr&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;abbr title="kilogram"&gt;kg&lt;/abbr&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;abbr title="złoty"&gt;zł&lt;/abbr&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;abbr title="volt"&gt;V&lt;/abbr&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;abbr title="volt, prąd przemienny"&gt;VAC&lt;/abbr&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;abbr title="wat"&gt;W&lt;/abbr&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;abbr title="milisekunda"&gt;ms&lt;/abbr&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;abbr title="megabajt"&gt;MB&lt;/abbr&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;abbr title="volt, prąd stały"&gt;VDC&lt;/abbr&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;abbr title="kilovolt"&gt;kV&lt;/abbr&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;abbr title="miliamper"&gt;mA&lt;/abbr&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;abbr title="megaherc"&gt;MHz&lt;/abbr&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;abbr title="kiloherc"&gt;kHz&lt;/abbr&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;abbr title="metr"&gt;m&lt;/abbr&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;abbr title="jak wyżej"&gt;j.w.&lt;/abbr&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;abbr title="nanosekunda"&gt;ns&lt;/abbr&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;abbr title="megabajt"&gt;MB&lt;/abbr&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;abbr title="kiloom"&gt;k&amp;Omega;&lt;/abbr&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;abbr title="megaom"&gt;M&amp;Omega;&lt;/abbr&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;abbr title="amper"&gt;A&lt;/abbr&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;abbr title="om"&gt;&amp;Omega;&lt;/abbr&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;abbr title="mikrosekunda"&gt;&amp;mu;s&lt;/abbr&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;abbr title="sekunda"&gt;s&lt;/abbr&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;abbr title="herc"&gt;Hz&lt;/abbr&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;abbr title="minuta"&gt;min&lt;/abbr&gt;&lt;/li&gt;
-    &lt;/ol&gt;</code></pre>
+&lt;ol class="none"&gt;
+    &lt;li&gt;&lt;abbr title="rok"&gt;r.&lt;/abbr&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;abbr title="kilobajt"&gt;kB&lt;/abbr&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;abbr title="kilogram"&gt;kg&lt;/abbr&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;abbr title="złoty"&gt;zł&lt;/abbr&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;abbr title="volt"&gt;V&lt;/abbr&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;abbr title="volt, prąd przemienny"&gt;VAC&lt;/abbr&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;abbr title="wat"&gt;W&lt;/abbr&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;abbr title="milisekunda"&gt;ms&lt;/abbr&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;abbr title="megabajt"&gt;MB&lt;/abbr&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;abbr title="volt, prąd stały"&gt;VDC&lt;/abbr&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;abbr title="kilovolt"&gt;kV&lt;/abbr&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;abbr title="miliamper"&gt;mA&lt;/abbr&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;abbr title="megaherc"&gt;MHz&lt;/abbr&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;abbr title="kiloherc"&gt;kHz&lt;/abbr&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;abbr title="metr"&gt;m&lt;/abbr&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;abbr title="jak wyżej"&gt;j.w.&lt;/abbr&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;abbr title="nanosekunda"&gt;ns&lt;/abbr&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;abbr title="megabajt"&gt;MB&lt;/abbr&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;abbr title="kiloom"&gt;k&amp;Omega;&lt;/abbr&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;abbr title="megaom"&gt;M&amp;Omega;&lt;/abbr&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;abbr title="amper"&gt;A&lt;/abbr&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;abbr title="om"&gt;&amp;Omega;&lt;/abbr&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;abbr title="mikrosekunda"&gt;&amp;mu;s&lt;/abbr&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;abbr title="sekunda"&gt;s&lt;/abbr&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;abbr title="herc"&gt;Hz&lt;/abbr&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;abbr title="minuta"&gt;min&lt;/abbr&gt;&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
                     </figure>
                     <h3>Wyróżnienia w tekście</h3>
-                    <p>Wyróżnienia w tekście należy zachować jak w oryginale. Pismo pochyłe należy oznaczać tagiem em, pismo pogrubione strong. Jeśli w tekście występuje wyróżnienie jedynie kolorem należy przyjąć także inny sposób wyróżnienia, np. za pomocą
+                    <p>Wyróżnienia w tekście należy zachować jak w oryginale. Pismo pochyłe należy oznaczać tagiem em,
+                        pismo pogrubione strong. Jeśli w tekście występuje wyróżnienie jedynie kolorem należy przyjąć
+                        także inny sposób wyróżnienia, np. za pomocą
                         pogrubienia.
                     </p>
                     <h3>Lista tabel</h3>
-                    <p>Należy pamiętać o tworzeniu unikalnych id dla tabel, aby móc stworzyć listę tabel z odnośnikami do powrotu do nich. </p>
+                    <p>Należy pamiętać o tworzeniu unikalnych id dla tabel, aby móc stworzyć listę tabel z odnośnikami
+                        do powrotu do nich. </p>
                     <h3>Lista grafik</h3>
-                    <p>Należy pamiętać o tworzeniu unikalnych id dla grafik, aby móc stworzyć listę grafik z odnośnikami do powrotu do nich. </p>
+                    <p>Należy pamiętać o tworzeniu unikalnych id dla grafik, aby móc stworzyć listę grafik z odnośnikami
+                        do powrotu do nich. </p>
                     <h3>Dialogi</h3>
-                    <p>Zapisując dialogi nie używamy list (ani punktowych, ani numerowanych) chyba, że w oryginale dialog jest przedstawiony za pomocą listy punktowej. W standardowym dialogu do zapisu używamy znacznika p oraz br. Osoby mówiące w danym dialogu
-                        wyróżniamy za pomocą strong(jeżeli w oryginale nie ma takiego wyróżnienia to też go nie stosujemy).
+                    <p>Zapisując dialogi nie używamy list (ani punktowych, ani numerowanych) chyba, że w oryginale
+                        dialog jest przedstawiony za pomocą listy punktowej. W standardowym dialogu do zapisu używamy
+                        znacznika p oraz br. Osoby mówiące w danym dialogu
+                        wyróżniamy za pomocą strong(jeżeli w oryginale nie ma takiego wyróżnienia to też go nie
+                        stosujemy).
                     </p>
-                    <figure id="code14">
+                    <figure id="code17">
                         <figcaption>Przykładowy kod dla dialogu</figcaption>
                         <pre><code>&lt;p&gt;&lt;strong&gt;A&lt;/strong&gt;: Hey, I'm really sorry I'm late. I came as fast as I could.&lt;/p&gt;
-    &lt;p&gt;&lt;strong&gt;B&lt;/strong&gt;:  It's OK. Nobody has really come  yet.&lt;/p&gt;
-    &lt;p&gt;&lt;strong&gt;A&lt;/strong&gt;: Why? Where are  they?&lt;/p&gt;
-    &lt;p&gt;&lt;strong&gt;B&lt;/strong&gt;: Well, John  is shopping. He is getting some food.&lt;/p&gt;</code></pre>
+&lt;p&gt;&lt;strong&gt;B&lt;/strong&gt;: It's OK. Nobody has really come  yet.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A&lt;/strong&gt;: Why? Where are  they?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;B&lt;/strong&gt;: Well, John  is shopping. He is getting some food.&lt;/p&gt;</code></pre>
                     </figure>
                     <h3>Wyróżnienie ramką</h3>
                     <ol>
                         <li><strong>Ważne informacje (twierdzenia, definicje i inne merytorycznie ważne treści)</strong>
-                            <p>W atrybucie aria-level=" " autor powinien wpisać właściwy poziom zgodny z hierarchią struktury nagłówków w swoim rozdziale np. aria-level="2", aria-level="5" itd. W znaczniku
-                                <code>&lt;p class="sr-only"</code>, należy umieścić informacje zgodnie z treścią książki, np. jeżeli ramka wyróżnia twierdzenie znajdujące się w rozdziale (nagłówek h2) to wtedy przykładowy fragment kodu może wyglądać następująco:
+                            <p>W atrybucie aria-level=" " autor powinien wpisać właściwy poziom zgodny z hierarchią
+                                struktury nagłówków w swoim rozdziale np. aria-level="2", aria-level="5" itd. W
+                                znaczniku
+                                <code>&lt;p class="sr-only"</code>, należy umieścić unikalne id identyczne z
+                                umieszczonym identyfikatorem w atrybucie aria-labelledby=" ". W znaczniku o klasie
+                                sr-only należy zamieścić również informacje zgodną z treścią książki, np. jeżeli ramka
+                                wyróżnia twierdzenie znajdujące się w rozdziale (nagłówek h2) to wtedy przykładowy
+                                fragment kodu może wyglądać następująco:
                             </p>
-                            <figure id="code15">
+                            <figure id="code18">
                                 <pre><code>&lt;div class="tfl-frame-highlight" role="region" aria-labelledby="region-heading"&gt;
     &lt;p class="sr-only" id="region-heading" role="heading" aria-level="2"&gt;Czarna ramka wyróżniająca fragment tekstu&lt;/p&gt;
     &lt;p&gt;&lt;strong&gt;D. Flexicurity&lt;/strong&gt;&lt;/p&gt;
@@ -512,18 +574,25 @@
                             </figure>
                             <p><strong>Rezultat wykonania powyższego kodu:</strong></p>
                             <div class="tfl-frame-highlight" role="region" aria-labelledby="region-heading">
-                                <p class="sr-only" id="region-heading" role="heading" aria-level="2">Czarna ramka wyróżniająca fragment tekstu</p>
+                                <p class="sr-only" id="region-heading" role="heading" aria-level="2">Czarna ramka
+                                    wyróżniająca fragment tekstu</p>
                                 <p><strong>D. Flexicurity</strong></p>
-                                Europejscy partnerzy społeczni uznają, iż dzisiejszy rynek pracy wymaga wdrożenia polityki, która miałaby wymiar zarówno elastyczności jak i bezpieczeństwa zatrudnienia dla pracowników podobnie jak i pracodawców. Właściwie wdrożone, podejście flexicurity
-                                może tworzyć sytuację, w której obie strony pracowników i pracodawców równo korzystają (win-win).
+                                Europejscy partnerzy społeczni uznają, iż dzisiejszy rynek pracy wymaga wdrożenia
+                                polityki, która miałaby wymiar zarówno elastyczności jak i bezpieczeństwa zatrudnienia
+                                dla pracowników podobnie jak i pracodawców. Właściwie wdrożone, podejście flexicurity
+                                może tworzyć sytuację, w której obie strony pracowników i pracodawców równo korzystają
+                                (win-win).
                             </div>
                         </li>
                         <li><strong>Wyróżnienie mniej istotnych elementów</strong>
-                            <p>Stałe elementy struktury książki oznaczone ramką, np. cytaty, informacje poboczne, treści, które nie są bardziej ważne niż pozostała treść, ale wyróżnienie nie występuje tylko ze względów dekoracyjnych. Tego oznaczenia możemy
-                                używać również do elementów, takich jak treści na marginesie strony lub innych niestandardowych treści, które posiadają wyróżnienie.
+                            <p>Stałe elementy struktury książki oznaczone ramką, np. cytaty, informacje poboczne,
+                                treści, które nie są bardziej ważne niż pozostała treść, ale wyróżnienie nie występuje
+                                tylko ze względów dekoracyjnych. Tego oznaczenia możemy
+                                używać również do elementów, takich jak treści na marginesie strony lub innych
+                                niestandardowych treści, które posiadają wyróżnienie.
                             </p>
                             <p>Przykładowy fragment kodu może wyglądać następująco:</p>
-                            <figure id="code16">
+                            <figure id="code19">
                                 <pre><code>&lt;div class="tfl-highlight" role="region" aria-labelledby="region-heading"&gt;
     &lt;p class="sr-only" id="region-heading"&gt;Informacja na marginesie strony&lt;/p&gt;
     &lt;p&gt;&lt;strong>generate&lt;/strong&gt; - generować&lt;br&gt;&lt;strong&gt;generation&lt;/strong&gt; - pokolenie&lt;br&gt;&lt;strong&gt;get&lt;/strong&gt; - dostać&lt;/p&gt;
@@ -533,17 +602,32 @@
                             <div class="tfl-highlight" role="region" aria-labelledby="region-custom-heading">
                                 <p class="sr-only" id="region-custom-heading">Informacja na marginesie strony</p>
                                 <p><strong>generate</strong> - generować<br><strong>generation</strong> - pokolenie
-                                    <br><strong>get</strong> - dostać</p>
+                                    <br><strong>get</strong> - dostać
+                                </p>
                             </div>
                         </li>
                     </ol>
                     <h3>Reprezentacja złożonych reprezentacji graficznych</h3>
-                    <p>W przypadku gdy w publikacji istnieją złożone reprezentacje graficzne, których opis alternatywny może być trudny w redakcji, lub zbyt zawiły dla użytkowników czytników technologii asystujących istnieje możliwość przedstawienia ich
-                        zawartości w postaci multimodalnego narzędzia, które pozwala na aktywną eksploracje za pomocą klawiatury pomiędzy poszczególnymi poziomami / zależnościami przedstawianymi użytkownikowi. Rozwiązanie to wskazane jest dla grafik prezentujących
-                        różnego rodzaju zależności, hierarchię poszczególnych elementów, a także w wypadku potrzeby nadania dodatkowej semantyki redagowanemu opisowi. Mogą to być informacje w postaci grafów, różnego rodzaju drzew, schematów i zależności
+                    <p>W przypadku gdy w publikacji istnieją złożone reprezentacje graficzne, których opis alternatywny
+                        może być trudny w redakcji, lub zbyt zawiły dla użytkowników czytników technologii asystujących
+                        istnieje możliwość przedstawienia ich
+                        zawartości w postaci multimodalnego narzędzia, które pozwala na aktywną eksploracje za pomocą
+                        klawiatury pomiędzy poszczególnymi poziomami / zależnościami przedstawianymi użytkownikowi.
+                        Rozwiązanie to wskazane jest dla grafik prezentujących
+                        różnego rodzaju zależności, hierarchię poszczególnych elementów, a także w wypadku potrzeby
+                        nadania dodatkowej semantyki redagowanemu opisowi. Mogą to być informacje w postaci grafów,
+                        różnego rodzaju drzew, schematów i zależności
                         pomiędzy nimi, mapy myśli, itd.</p>
-                    <p>Aby zacząć tworzyć taką postać zagnieżdżonej listy należy rozpocząć jej tworzenie od umieszczenia elementu korzenia diagramu wewnątrz znacznika ul z wartością tree atrybutu role znacznika:</p>
-                    <figure id="code17">
+                    <p>Aby zacząć tworzyć taką postać zagnieżdżonej listy należy rozpocząć jej tworzenie od umieszczenia
+                        elementu korzenia
+                        diagramu wewnątrz znacznika ul z wartością <strong>tree</strong> atrybutu role znacznika. Jeśli
+                        w naszej publikacji zdecydujemy się
+                        na zastosowanie większej ilości tego typu listy to należy pamiętać o zmianie id dla każdej
+                        kolejnej listy w tym
+                        elemencie <code>&lt;div id="tfl-deque-tree-root"&gt;</code> oraz każdym atrybucie
+                        <strong>data-tree-root</strong>, w którym należy wprowadzić
+                        wspomniany identyfikator:</p>
+                    <figure id="code20">
                         <pre><code>&lt;div class="tfl-deque-tree-no-select tfl-deque-tree tfl-left"&gt;
     &lt;div id="tfl-deque-tree-root"&gt;
         &lt;ul role="tree"&gt;
@@ -552,20 +636,31 @@
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                     </figure>
-                    <p>Następnym krokiem jest zdefiniowanie korzenia grafu. Jeśli korzeń opisywanego diagramu jest jedynym jego elementem to należy w takim przypadku wewnątrz znacznika ul umieścić poniższy kod:</p>
-                    <figure id="code18">
+                    <p>Następnym krokiem jest zdefiniowanie korzenia grafu. Jeśli korzeń opisywanego diagramu jest
+                        jedynym jego elementem to należy w takim przypadku wewnątrz znacznika ul umieścić poniższy kod:
+                    </p>
+                    <figure id="code21">
                         <pre><code>&lt;li role="treeitem" aria-label="wartość korzenia" data-tree-root="tfl-deque-tree-root" tabindex="-1" aria-expanded="false"&gt;
     &lt;div class="tfl-deque-tree-leaf" aria-hidden="true"&gt;&lt;/div&gt;
     &lt;span class="tfl-deque-tree-label"&gt;wartość korzenia&lt;/span&gt;
 &lt;/li&gt;</code></pre>
                     </figure>
-                    <p>Jest on odpowiednikiem kodu definiującego liście dla takiego grafu, których metoda tworzenia przedstawiona zostanie w kolejnej części sposobu reprezentacji złożonych reprezentacji graficznych przy użyciu zagnieżdżonych list. Dla powyższego
-                        kodu w atrybucie aria-level=" " oraz znaczniku span o klasie <strong>tfl-deque-tree-label</strong> autor powinien wpisać wartość wierzchołka opisywanego grafu. Operację tą wykonujemy również na przedstawionych w kolejnych etapach
-                        przykładach procesu tworzenia zagnieżdżonych list.</p>
-                    <p>W procesie tworzenia korzenia grafu może wystąpić przypadek, w którym element będący jego korzeniem będzie rodzicem kolejnych elementów opisywanego grafu. W takim wypadku należy pamiętać, że elementy będące dziećmi opisywanego korzenia
-                        należy umieścić w znaczniku ul z wartością group atrybutu role znacznika. Dodatkowo należy nadać znacznikowi div opisu korzenia wartość reprezentującą wartość wierzchołka klasy o nazwie <strong>tfl-deque-tree-branch</strong>.</p>
+                    <p>Jest on odpowiednikiem kodu definiującego liście dla takiego grafu, których metoda tworzenia
+                        przedstawiona zostanie w kolejnej części sposobu reprezentacji złożonych reprezentacji
+                        graficznych przy użyciu zagnieżdżonych list. Dla powyższego
+                        kodu w atrybucie aria-level=" " oraz znaczniku span o klasie
+                        <strong>tfl-deque-tree-label</strong> autor powinien wpisać wartość wierzchołka opisywanego
+                        grafu. Operację tą wykonujemy również na przedstawionych w kolejnych etapach przykładach procesu
+                        tworzenia zagnieżdżonych list.
                     </p>
-                    <figure id="code19">
+                    <p>W procesie tworzenia korzenia grafu może wystąpić przypadek, w którym element będący jego
+                        korzeniem będzie rodzicem kolejnych elementów opisywanego grafu. W takim wypadku należy
+                        pamiętać, że elementy będące dziećmi opisywanego korzenia
+                        należy umieścić w znaczniku ul z wartością group atrybutu role znacznika. Dodatkowo należy nadać
+                        znacznikowi div opisu korzenia wartość reprezentującą wartość wierzchołka klasy o nazwie
+                        <strong>tfl-deque-tree-branch</strong>.
+                    </p>
+                    <figure id="code22">
                         <pre><code>&lt;li role="treeitem" aria-label="wartość korzenia grafu" data-tree-root="tfl-deque-tree-root" tabindex="-1" aria-expanded="false"&gt;
     &lt;div class="tfl-deque-tree-branch" aria-hidden="true"&gt;&lt;/div&gt;
     &lt;span class="tfl-deque-tree-label"&gt;wartość korzenia grafu&lt;/span&gt;
@@ -578,16 +673,19 @@
     &lt;/ul&gt;
 &lt;li&gt;</code></pre>
                     </figure>
-                    <p>Ostatnim krokiem opisu diagramów przy użyciu zagnieżdżonych listy jest definiowanie kolejnych wierzchołków dla takiego grafu. Odbywa się to w identyczny sposób w jaki tworzyliśmy korzeń. Otóż, jeśli wierzchołek nie posiada dzieci,
+                    <p>Ostatnim krokiem opisu diagramów przy użyciu zagnieżdżonych listy jest definiowanie kolejnych
+                        wierzchołków dla takiego grafu. Odbywa się to w identyczny sposób w jaki tworzyliśmy korzeń.
+                        Otóż, jeśli wierzchołek nie posiada dzieci,
                         a co za tym idzie jest liściem takiego grafu to należy opisać go w następujący sposób:</p>
-                    <figure id="code20">
+                    <figure id="code23">
                         <pre><code>&lt;li role="treeitem" aria-label="wartość liścia grafu" data-tree-root="tfl-deque-tree-root" tabindex="-1" aria-expanded="false"&gt;
     &lt;div class="tfl-deque-tree-leaf" aria-hidden="true"&gt;&lt;/div&gt;
     &lt;span class="tfl-deque-tree-label"&gt;wartość liścia grafu&lt;/span&gt;
 &lt;/li&gt;</code></pre>
                     </figure>
-                    <p>Natomiast jeśli jest rodzicem kolejnych wierzchołków takiego grafu to należy opisać go poniższym kodem wraz z umieszczeniem kolejnych jego elementów (jego dzieci) w znaczniku ul listy.</p>
-                    <figure id="code21">
+                    <p>Natomiast jeśli jest rodzicem kolejnych wierzchołków takiego grafu to należy opisać go poniższym
+                        kodem wraz z umieszczeniem kolejnych jego elementów (jego dzieci) w znaczniku ul listy.</p>
+                    <figure id="code24">
                         <pre><code>&lt;li role="treeitem" aria-label="wartość rodzica" data-tree-root="tfl-deque-tree-root" tabindex="-1" aria-expanded="false"&gt;
     &lt;div class="tfl-deque-tree-branch" aria-hidden="true"&gt;&lt;/div&gt;
     &lt;span class="tfl-deque-tree-label"&gt;wartość rodzica&lt;/span&gt;
@@ -600,76 +698,112 @@
     &lt;/ul&gt;
 &lt;li&gt;</code></pre>
                     </figure>
-                    <p><strong>Rezultat wykonania wszytskich powyższych etapów tworzenia zagnieżdżonych list umieszczony został w szczegółowym opisie dla grafiki zamieszczonej poniżej:</strong></p>
+                    <p><strong>Rezultat wykonania wszytskich powyższych etapów tworzenia zagnieżdżonych list umieszczony
+                            został w szczegółowym opisie dla grafiki zamieszczonej poniżej:</strong></p>
                     <figure id="img2" class="tfl-center">
                         <img src="images/img2.png" class="img-fluid" alt="Przykład drzewa" />
                         <figcaption>
                             <details>
                                 <summary>Szczegółowy opis grafiki</summary>
                                 <p class="tfl-left">
-                                    Korzeniem drzewa jest węzeł 100. Przykład tego, w jaki sposób rozchodzi się drzewo, można przedstawić za pomocą poniższej listy:
+                                    Korzeniem drzewa jest węzeł 100. Przykład tego, w jaki sposób rozchodzi się drzewo,
+                                    można przedstawić za pomocą poniższej listy:
                                 </p>
                                 <div class="tfl-deque-tree-no-select tfl-deque-tree tfl-left">
                                     <div id="tfl-deque-tree-root">
                                         <ul role="tree">
-                                            <li role="treeitem" aria-label="100" data-tree-root="tfl-deque-tree-root" tabindex="0" aria-expanded="false">
+                                            <li role="treeitem" aria-label="100" data-tree-root="tfl-deque-tree-root"
+                                                tabindex="0" aria-expanded="false">
                                                 <div class="tfl-deque-tree-branch" aria-hidden="true"></div>
                                                 <span class="tfl-deque-tree-label">100</span>
                                                 <ul role="group">
-                                                    <li role="treeitem" aria-label="50" data-tree-root="tfl-deque-tree-root" tabindex="-1" aria-expanded="false">
+                                                    <li role="treeitem" aria-label="50"
+                                                        data-tree-root="tfl-deque-tree-root" tabindex="-1"
+                                                        aria-expanded="false">
                                                         <div class="tfl-deque-tree-branch" aria-hidden="true"></div>
                                                         <span class="tfl-deque-tree-label">50</span>
                                                         <ul role="group">
-                                                            <li role="treeitem" aria-label="12" data-tree-root="tfl-deque-tree-root" tabindex="-1" aria-expanded="false">
-                                                                <div class="tfl-deque-tree-branch" aria-hidden="true"></div>
+                                                            <li role="treeitem" aria-label="12"
+                                                                data-tree-root="tfl-deque-tree-root" tabindex="-1"
+                                                                aria-expanded="false">
+                                                                <div class="tfl-deque-tree-branch" aria-hidden="true">
+                                                                </div>
                                                                 <span class="tfl-deque-tree-label">12</span>
                                                                 <ul role="group">
-                                                                    <li role="treeitem" aria-label="45" data-tree-root="tfl-deque-tree-root" tabindex="-1" aria-expanded="false">
-                                                                        <div class="tfl-deque-tree-leaf" aria-hidden="true"></div>
+                                                                    <li role="treeitem" aria-label="45"
+                                                                        data-tree-root="tfl-deque-tree-root"
+                                                                        tabindex="-1" aria-expanded="false">
+                                                                        <div class="tfl-deque-tree-leaf"
+                                                                            aria-hidden="true"></div>
                                                                         <span class="tfl-deque-tree-label">45</span>
                                                                     </li>
                                                                 </ul>
                                                             </li>
                                                         </ul>
                                                     </li>
-                                                    <li role="treeitem" aria-label="1" data-tree-root="tfl-deque-tree-root" tabindex="-1" aria-expanded="false">
+                                                    <li role="treeitem" aria-label="1"
+                                                        data-tree-root="tfl-deque-tree-root" tabindex="-1"
+                                                        aria-expanded="false">
                                                         <div class="tfl-deque-tree-branch" aria-hidden="true"></div>
                                                         <span class="tfl-deque-tree-label">1</span>
                                                         <ul role="group">
-                                                            <li role="treeitem" aria-label="70" data-tree-root="tfl-deque-tree-root" tabindex="-1" aria-expanded="false">
-                                                                <div class="tfl-deque-tree-leaf" aria-hidden="true"></div>
+                                                            <li role="treeitem" aria-label="70"
+                                                                data-tree-root="tfl-deque-tree-root" tabindex="-1"
+                                                                aria-expanded="false">
+                                                                <div class="tfl-deque-tree-leaf" aria-hidden="true">
+                                                                </div>
                                                                 <span class="tfl-deque-tree-label">70</span>
                                                             </li>
-                                                            <li role="treeitem" aria-label="61" data-tree-root="tfl-deque-tree-root" tabindex="-1" aria-expanded="false">
-                                                                <div class="tfl-deque-tree-leaf" aria-hidden="true"></div>
+                                                            <li role="treeitem" aria-label="61"
+                                                                data-tree-root="tfl-deque-tree-root" tabindex="-1"
+                                                                aria-expanded="false">
+                                                                <div class="tfl-deque-tree-leaf" aria-hidden="true">
+                                                                </div>
                                                                 <span class="tfl-deque-tree-label">61</span>
                                                             </li>
                                                         </ul>
                                                     </li>
-                                                    <li role="treeitem" aria-label="150" data-tree-root="tfl-deque-tree-root" tabindex="-1" aria-expanded="false">
+                                                    <li role="treeitem" aria-label="150"
+                                                        data-tree-root="tfl-deque-tree-root" tabindex="-1"
+                                                        aria-expanded="false">
                                                         <div class="tfl-deque-tree-branch" aria-hidden="true"></div>
                                                         <span class="tfl-deque-tree-label">150</span>
                                                         <ul role="group">
-                                                            <li role="treeitem" aria-label="30" data-tree-root="tfl-deque-tree-root" tabindex="-1" aria-expanded="false">
-                                                                <div class="tfl-deque-tree-branch" aria-hidden="true"></div>
+                                                            <li role="treeitem" aria-label="30"
+                                                                data-tree-root="tfl-deque-tree-root" tabindex="-1"
+                                                                aria-expanded="false">
+                                                                <div class="tfl-deque-tree-branch" aria-hidden="true">
+                                                                </div>
                                                                 <span class="tfl-deque-tree-label">30</span>
                                                                 <ul role="group">
-                                                                    <li role="treeitem" aria-label="96" data-tree-root="tfl-deque-tree-root" tabindex="-1" aria-expanded="false">
-                                                                        <div class="tfl-deque-tree-leaf" aria-hidden="true"></div>
+                                                                    <li role="treeitem" aria-label="96"
+                                                                        data-tree-root="tfl-deque-tree-root"
+                                                                        tabindex="-1" aria-expanded="false">
+                                                                        <div class="tfl-deque-tree-leaf"
+                                                                            aria-hidden="true"></div>
                                                                         <span class="tfl-deque-tree-label">96</span>
                                                                     </li>
-                                                                    <li role="treeitem" aria-label="9" data-tree-root="tfl-deque-tree-root" tabindex="-1" aria-expanded="false">
-                                                                        <div class="tfl-deque-tree-leaf" aria-hidden="true"></div>
+                                                                    <li role="treeitem" aria-label="9"
+                                                                        data-tree-root="tfl-deque-tree-root"
+                                                                        tabindex="-1" aria-expanded="false">
+                                                                        <div class="tfl-deque-tree-leaf"
+                                                                            aria-hidden="true"></div>
                                                                         <span class="tfl-deque-tree-label">9</span>
                                                                     </li>
                                                                 </ul>
                                                             </li>
-                                                            <li role="treeitem" aria-label="5" data-tree-root="tfl-deque-tree-root" tabindex="-1" aria-expanded="false">
-                                                                <div class="tfl-deque-tree-leaf" aria-hidden="true"></div>
+                                                            <li role="treeitem" aria-label="5"
+                                                                data-tree-root="tfl-deque-tree-root" tabindex="-1"
+                                                                aria-expanded="false">
+                                                                <div class="tfl-deque-tree-leaf" aria-hidden="true">
+                                                                </div>
                                                                 <span class="tfl-deque-tree-label">5</span>
                                                             </li>
-                                                            <li role="treeitem" aria-label="11" data-tree-root="tfl-deque-tree-root" tabindex="-1" aria-expanded="false">
-                                                                <div class="tfl-deque-tree-leaf" aria-hidden="true"></div>
+                                                            <li role="treeitem" aria-label="11"
+                                                                data-tree-root="tfl-deque-tree-root" tabindex="-1"
+                                                                aria-expanded="false">
+                                                                <div class="tfl-deque-tree-leaf" aria-hidden="true">
+                                                                </div>
                                                                 <span class="tfl-deque-tree-label">11</span>
                                                             </li>
                                                         </ul>
@@ -679,17 +813,23 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <p class="tfl-left">Na rysunku zaznaczono również czym jest korzeń, węzeł, rodzic, dzieci, rodzeństwo, liść, poddrzewo, dziecko.
+                                <p class="tfl-left">Na rysunku zaznaczono również czym jest korzeń, węzeł, rodzic,
+                                    dzieci, rodzeństwo, liść, poddrzewo, dziecko.
                                 </p>
                             </details>
                         </figcaption>
                     </figure>
                     <h3>Uwagi do wersji zaadaptowanej</h3>
-                    <p>Wszystkie zmiany odbiegające od oryginału powinny zostać krótko opisane w uwagach do adaptacji na początku dokumentu.</p>
-                    <p>Przed adaptacją treści należy uzupełnić dane początkowe tj. „Uwagi do wersji zaadaptowanej:” występujące na początku szablonu. W razie potrzeby należy dopisywać w miejsce uwag znaczące różnice, które występują między oryginałem a adaptacją.</p>
+                    <p>Wszystkie zmiany odbiegające od oryginału powinny zostać krótko opisane w uwagach do adaptacji na
+                        początku dokumentu.</p>
+                    <p>Przed adaptacją treści należy uzupełnić dane początkowe tj. „Uwagi do wersji zaadaptowanej:”
+                        występujące na początku szablonu. W razie potrzeby należy dopisywać w miejsce uwag znaczące
+                        różnice, które występują między oryginałem a adaptacją.</p>
                 </main>
                 <footer>
-                    <p>Publikacja została zaadaptowana zgodnie z WCAG 2.1 na poziomie AA. Obecnie wersja v1.1. Szablon udostępniony na licencji <a href="https://github.com/tyflolab/szablon-WCAG/blob/master/LICENSE">MIT</a>.</p>
+                    <p>Publikacja została zaadaptowana zgodnie z WCAG 2.1 na poziomie AA. Obecnie wersja v1.1. Szablon
+                        udostępniony na licencji <a
+                            href="https://github.com/tyflolab/szablon-WCAG/blob/master/LICENSE">MIT</a>.</p>
                 </footer>
             </div>
         </div>
