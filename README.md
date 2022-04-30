@@ -5,7 +5,7 @@
 W elemencie `head` dokumentu HTML należy uzupełnić informacje na jego temat.
 
 ```html
-<meta name="author" content="Magdalena Kruczek" />
+<meta name="author" content="Magdalena Kruczek">
 <title>Specyfikacja adaptacji HTML</title>
 ```
 
@@ -78,7 +78,7 @@ Każda grafika przedstawiająca informacje powinna posiadać opis alternatywny o
 ```html
 <figure id="img1" class="tfl-center">
   <img src="images/img.png" class="img-fluid"
-     alt="Tutaj umieszczamy opis alternatywny do grafiki"/>
+     alt="Tutaj umieszczamy opis alternatywny do grafiki">
   <figcaption>
     Tutaj umieszczamy wyświetlany tytuł grafiki.
     <details>
